@@ -1,0 +1,92 @@
+{
+  "services": [
+    {
+      "id": "freelancing",
+      "title": "软件项目接案",
+      "shortDescription": "客制化软件开发，满足您的需求",
+      "longDescription": "提供从需求分析、系统设计到开发部署的完整软件开发服务。擅长打造可扩展的全端应用，曾服务超过 300 位月活跃用户的系统。",
+      "icon": "code",
+      "features": [
+        "全端网页应用开发",
+        "系统架构设计",
+        "数据库设计与优化",
+        "云端部署 (Cloudflare, Vercel)",
+        "持续维护与技术支持"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "PostgreSQL",
+        "Supabase",
+        "Docker"
+      ],
+      "priceRange": "依项目规模报价",
+      "availability": "接案中",
+      "contactInfo": {
+        "email": "ruby0322@ntu.im",
+        "facebook": "https://www.facebook.com/ruby0322.lin",
+        "preferredContact": "email"
+      }
+    },
+    {
+      "id": "tutoring",
+      "title": "编程教学",
+      "shortDescription": "一对一编程教学与指导",
+      "longDescription": "拥有丰富教学经验，曾担任台大多门课程助教，指导超过 500 位学生。提供客制化教学内容，从基础程序语言到进阶开发技巧。",
+      "icon": "graduation-cap",
+      "features": [
+        "一对一在线教学",
+        "客制化课程内容",
+        "实作项目指导",
+        "面试准备与简历优化",
+        "Vibe coding 指导"
+      ],
+      "technologies": [
+        "Python",
+        "C/C++",
+        "JavaScript/TypeScript",
+        "数据结构与算法",
+        "网页开发",
+        "深度学习"
+      ],
+      "priceRange": "时薪新台币 1000 元起",
+      "availability": "接案中",
+      "contactInfo": {
+        "email": "ruby0322@ntu.im",
+        "facebook": "https://www.facebook.com/ruby.ku.0322/",
+        "preferredContact": "facebook"
+      }
+    },
+    {
+      "id": "fulltime",
+      "title": "开放全职工作机会",
+      "shortDescription": "积极寻求全职软件工程师职位",
+      "longDescription": "对软件开发充满热情，拥有实习与多个项目经验。擅长全端开发与 AI 应用，期待加入创新团队，共同打造优质产品。",
+      "icon": "briefcase",
+      "features": [
+        "全端开发经验",
+        "AI 应用开发",
+        "系统架构设计",
+        "团队协作与领导",
+        "快速学习能力"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Python",
+        "Docker",
+        "GCP",
+        "PostgreSQL"
+      ],
+      "priceRange": "面议",
+      "availability": "2025 年 7 月起",
+      "contactInfo": {
+        "email": "ruby0322@ntu.im",
+        "linkedin": "https://www.linkedin.com/in/%E5%AF%AC%E8%A8%BC-%E9%A1%A7-a9b282214/",
+        "preferredContact": "email"
+      }
+    }
+  ]
+}

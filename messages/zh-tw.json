@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "resume": "專業履歷",
+    "services": "服務"
+  },
+  "services": {
+    "title": "服務項目",
+    "subtitle": "提供專業的軟體開發與教學服務",
+    "availability": "可用性",
+    "priceRange": "收費範圍",
+    "features": "服務特色",
+    "technologies": "相關技術",
+    "contact": "聯繫方式",
+    "freelancing": {
+      "title": "軟體專案接案",
+      "description": "客製化軟體開發，滿足您的需求"
+    },
+    "tutoring": {
+      "title": "程式教學",
+      "description": "一對一程式教學與指導"
+    },
+    "fulltime": {
+      "title": "開放全職工作機會",
+      "description": "積極尋求全職軟體工程師職位"
+    }
+  },
+  "sections": {
+    "achievements": "成就",
+    "experience": "經歷",
+    "education": "學歷",
+    "projects": "專案",
+    "skills": "技能"
+  },
+  "common": {
+    "present": "至今"
+  },
+  "footer": {
+    "copyright": "© {year} 顧寬証 (James Ku)。保留所有權利。"
+  }
+}

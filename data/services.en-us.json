@@ -1,0 +1,93 @@
+{
+  "services": [
+    {
+      "id": "freelancing",
+      "title": "Software Development Freelancing",
+      "shortDescription": "Customized software development to meet your needs",
+      "longDescription": "Providing comprehensive software development services from requirements analysis, system design to development and deployment. Experienced in building scalable full-stack applications that serve 300+ monthly active users.",
+      "icon": "code",
+      "features": [
+        "Full-stack web application development",
+        "System architecture design",
+        "Database design and optimization",
+        "Cloud deployment (Cloudflare, Vercel)",
+        "Continuous maintenance and technical support"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "PostgreSQL",
+        "Supabase",
+        "Docker"
+      ],
+      "priceRange": "Quote based on project scope",
+      "availability": "Available",
+      "contactInfo": {
+        "email": "ruby0322@ntu.im",
+        "facebook": "https://www.facebook.com/ruby0322.lin",
+        "preferredContact": "email"
+      }
+    },
+    {
+      "id": "tutoring",
+      "title": "Programming Tutoring",
+      "shortDescription": "One-on-one programming tutoring and mentorship",
+      "longDescription": "Extensive teaching experience as a teaching assistant for multiple courses at NTU, having guided over 500 students. Offering customized curriculum from basic programming languages to advanced development techniques.",
+      "icon": "graduation-cap",
+      "features": [
+        "One-on-one online tutoring",
+        "Customized curriculum",
+        "Project-based learning guidance",
+        "Interview preparation and resume optimization",
+        "Vibe coding coaching",
+        "English tutoring"
+      ],
+      "technologies": [
+        "Python",
+        "C/C++",
+        "JavaScript/TypeScript",
+        "Data Structures & Algorithms",
+        "Web Development",
+        "Deep Learning"
+      ],
+      "priceRange": "40+USD/h",
+      "availability": "Available",
+      "contactInfo": {
+        "email": "ruby0322@ntu.im",
+        "facebook": "https://www.facebook.com/ruby.ku.0322/",
+        "preferredContact": "facebook"
+      }
+    },
+    {
+      "id": "fulltime",
+      "title": "Open to Full-time Opportunities",
+      "shortDescription": "Actively seeking full-time software engineer positions",
+      "longDescription": "Passionate about software development with internship and multiple project experiences. Skilled in full-stack development and AI applications, looking forward to joining innovative teams to build quality products.",
+      "icon": "briefcase",
+      "features": [
+        "Full-stack development experience",
+        "AI application development",
+        "System architecture design",
+        "Team collaboration and leadership",
+        "Fast learning ability"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Python",
+        "Docker",
+        "GCP",
+        "PostgreSQL"
+      ],
+      "priceRange": "Negotiable",
+      "availability": "From July 2025",
+      "contactInfo": {
+        "email": "ruby0322@ntu.im",
+        "linkedin": "https://www.linkedin.com/in/%E5%AF%AC%E8%A8%BC-%E9%A1%A7-a9b282214/",
+        "preferredContact": "email"
+      }
+    }
+  ]
+}

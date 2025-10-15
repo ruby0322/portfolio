@@ -1,0 +1,91 @@
+{
+  "services": [
+    {
+      "id": "freelancing",
+      "title": "軟體專案接案",
+      "shortDescription": "客製化軟體開發，滿足您的需求",
+      "longDescription": "提供從需求分析、系統設計到開發部署的完整軟體開發服務。擅長打造可擴展的全端應用，曾服務超過 300 位月活躍用戶的系統。",
+      "icon": "code",
+      "features": [
+        "全端網頁應用開發",
+        "系統架構設計",
+        "資料庫設計與優化",
+        "雲端部署 (Cloudflare, Vercel)",
+        "持續維護與技術支援"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "PostgreSQL",
+        "Supabase",
+        "Docker"
+      ],
+      "priceRange": "依專案規模報價",
+      "availability": "接案中",
+      "contactInfo": {
+        "email": "ruby0322@ntu.im",
+        "preferredContact": "email"
+      }
+    },
+    {
+      "id": "tutoring",
+      "title": "程式教學",
+      "shortDescription": "一對一程式教學與指導",
+      "longDescription": "擁有豐富教學經驗，曾擔任台大多門課程助教，指導超過 500 位學生。提供客製化教學內容，從基礎程式語言到進階開發技巧。",
+      "icon": "graduation-cap",
+      "features": [
+        "一對一線上教學",
+        "客製化課程內容",
+        "實作專案指導",
+        "面試準備與履歷優化",
+        "Vibe coding 指導"
+      ],
+      "technologies": [
+        "Python",
+        "C/C++",
+        "JavaScript/TypeScript",
+        "資料結構與演算法",
+        "網頁開發",
+        "深度學習"
+      ],
+      "priceRange": "時薪 NT$ 1000 起",
+      "availability": "接案中",
+      "contactInfo": {
+        "email": "ruby0322@ntu.im",
+        "facebook": "https://www.facebook.com/ruby.ku.0322/",
+        "preferredContact": "facebook"
+      }
+    },
+    {
+      "id": "fulltime",
+      "title": "開放全職工作機會",
+      "shortDescription": "積極尋求全職軟體工程師職位",
+      "longDescription": "對軟體開發充滿熱情，擁有實習與多個專案經驗。擅長全端開發與 AI 應用，期待加入創新團隊，共同打造優質產品。",
+      "icon": "briefcase",
+      "features": [
+        "全端開發經驗",
+        "AI 應用開發",
+        "系統架構設計",
+        "團隊協作與領導",
+        "快速學習能力"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Python",
+        "Docker",
+        "GCP",
+        "PostgreSQL"
+      ],
+      "priceRange": "面議",
+      "availability": "2026 年 6 月起",
+      "contactInfo": {
+        "email": "ruby0322@ntu.im",
+        "linkedin": "https://www.linkedin.com/in/%E5%AF%AC%E8%A8%BC-%E9%A1%A7-a9b282214/",
+        "preferredContact": "email"
+      }
+    }
+  ]
+}

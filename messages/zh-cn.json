@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "resume": "专业简历",
+    "services": "服务"
+  },
+  "services": {
+    "title": "服务项目",
+    "subtitle": "提供专业的软件开发与教学服务",
+    "availability": "可用性",
+    "priceRange": "价格范围",
+    "features": "服务特色",
+    "technologies": "相关技术",
+    "contact": "联系方式",
+    "freelancing": {
+      "title": "软件项目接案",
+      "description": "定制化软件开发，满足您的需求"
+    },
+    "tutoring": {
+      "title": "编程教学",
+      "description": "一对一编程教学与指导"
+    },
+    "fulltime": {
+      "title": "开放全职工作机会",
+      "description": "积极寻求全职软件工程师职位"
+    }
+  },
+  "sections": {
+    "achievements": "成就",
+    "experience": "经历",
+    "education": "学历",
+    "projects": "项目",
+    "skills": "技能"
+  },
+  "common": {
+    "present": "至今"
+  },
+  "footer": {
+    "copyright": "© {year} 顾宽証 (James Ku)。保留所有权利。"
+  }
+}

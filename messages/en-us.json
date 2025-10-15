@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "resume": "Professional Resume",
+    "services": "Services"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Professional software development and tutoring services",
+    "availability": "Availability",
+    "priceRange": "Charges Range",
+    "features": "Features",
+    "technologies": "Technologies",
+    "contact": "Contact",
+    "freelancing": {
+      "title": "Software Project Freelancing",
+      "description": "Custom software development tailored to your needs"
+    },
+    "tutoring": {
+      "title": "Programming Tutoring",
+      "description": "One-on-one programming tutoring and mentorship"
+    },
+    "fulltime": {
+      "title": "Open to Full-Time Opportunities",
+      "description": "Actively seeking full-time software engineering roles"
+    }
+  },
+  "sections": {
+    "achievements": "Achievements",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "skills": "Skills"
+  },
+  "common": {
+    "present": "Present"
+  },
+  "footer": {
+    "copyright": "© {year} Kuan-Cheng (James) Ku. All rights reserved."
+  }
+}
