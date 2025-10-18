@@ -34,9 +34,9 @@
   },
   "photography": {
     "title": "摄影",
-    "listView": "列表视图",
-    "galleryView": "画廊视图",
-    "postsView": "贴文视图",
+    "listView": "列表",
+    "galleryView": "画廊",
+    "postsView": "贴文",
     "noPhotosAvailable": "暂无照片",
     "relatedPosts": "相关贴文",
     "followOnInstagram": "在 Instagram 上关注我"

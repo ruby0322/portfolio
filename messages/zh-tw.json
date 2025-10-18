@@ -34,9 +34,9 @@
   },
   "photography": {
     "title": "攝影",
-    "listView": "列表檢視",
-    "galleryView": "畫廊檢視",
-    "postsView": "貼文檢視",
+    "listView": "列表",
+    "galleryView": "圖庫",
+    "postsView": "貼文",
     "noPhotosAvailable": "暫無照片",
     "relatedPosts": "相關貼文",
     "followOnInstagram": "在 IG 上追蹤我"
