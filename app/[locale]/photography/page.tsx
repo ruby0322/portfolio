@@ -90,7 +90,7 @@ export default function PhotographyPage() {
 
           {/* Content */}
           {viewMode === 'list' ? (
-            <Section id="photography-content" className="scroll-mt-20 border-t-0">
+            <Section id="photography-content" className="scroll-mt-20 border-t-0 px-0">
               {data.experience && data.experience.length > 0 && (
                 <div className="mb-16">
                   <h2 className="text-2xl font-light text-foreground mb-12">{tSections('experience')}</h2>

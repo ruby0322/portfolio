@@ -3,6 +3,7 @@
 import { type PhotographyData } from '@/lib/schemas/photography';
 import { Eye, Link2, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { useState } from 'react';
 import { PhotoGalleryDialog } from '../photo-gallery-dialog';
 import { InstagramEmbed } from './instagram-embed';
@@ -29,50 +30,87 @@ export function PhotographyExperienceItem({ experience }: PhotographyExperienceI
 
   const hasPhotos = experience.photos && experience.photos.length > 0;
   const hasEmbeds = experience.embeds && experience.embeds.length > 0;
+  const displayPhotos = hasPhotos ? experience.photos!.slice(0, 4) : [];
+  const remainingPhotos = hasPhotos ? Math.max(0, experience.photos!.length - 4) : 0;
 
   return (
-    <div className="space-y-3">
-      <div className="flex justify-between items-start">
-        <div>
-          <div className="flex items-center gap-2">
-            <TitleComponent {...titleProps}>{experience.title}</TitleComponent>
-            {hasPhotos && (
-              <button
-                onClick={() => setPhotoDialogOpen(true)}
-                className="text-muted-foreground hover:text-foreground transition-colors"
-                aria-label="View photos"
-              >
-                <Eye className="h-4 w-4" />
-              </button>
-            )}
-            {hasEmbeds && (
-              <button
-                onClick={() => setEmbedDialogOpen(true)}
-                className="text-muted-foreground hover:text-foreground transition-colors"
-                aria-label="View embeds"
-              >
-                <Link2 className="h-4 w-4" />
-              </button>
-            )}
+    <div className="flex flex-col md:flex-row gap-6 group">
+      {/* Content */}
+      <div className="flex-1 space-y-3">
+        <div className="flex justify-between items-start">
+          <div>
+            <div className="flex items-center gap-2">
+              <TitleComponent {...titleProps}>{experience.title}</TitleComponent>
+              {hasPhotos && (
+                <button
+                  onClick={() => setPhotoDialogOpen(true)}
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  aria-label="View photos"
+                >
+                  <Eye className="h-4 w-4" />
+                </button>
+              )}
+              {hasEmbeds && (
+                <button
+                  onClick={() => setEmbedDialogOpen(true)}
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  aria-label="View embeds"
+                >
+                  <Link2 className="h-4 w-4" />
+                </button>
+              )}
+            </div>
+            <p className="text-sm text-muted-foreground mt-1">{experience.organization}</p>
           </div>
-          <p className="text-sm text-muted-foreground mt-1">{experience.organization}</p>
+          {experience.period && (
+            <span className="text-sm text-muted-foreground">{experience.period}</span>
+          )}
         </div>
-        {experience.period && (
-          <span className="text-sm text-muted-foreground">{experience.period}</span>
-        )}
+        <div className="space-y-2">
+          {experience.description && (
+            <p className="text-sm text-foreground/80 leading-relaxed">{experience.description}</p>
+          )}
+          {experience.outcomes && experience.outcomes.length > 0 && (
+            <div className="space-y-2">
+              {experience.outcomes.map((outcome: string, idx: number) => (
+                <p key={idx} className="text-sm text-foreground/80 leading-relaxed">{outcome}</p>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
-      <div className="space-y-2">
-        {experience.description && (
-          <p className="text-sm text-foreground/80 leading-relaxed">{experience.description}</p>
-        )}
-        {experience.outcomes && experience.outcomes.length > 0 && (
-          <div className="space-y-2">
-            {experience.outcomes.map((outcome: string, idx: number) => (
-              <p key={idx} className="text-sm text-foreground/80 leading-relaxed">{outcome}</p>
+
+      {/* Thumbnail Preview Grid */}
+      {hasPhotos && (
+        <div 
+          className="flex-shrink-0 w-full md:w-48 h-48 cursor-pointer flex items-center justify-center"
+          onClick={() => setPhotoDialogOpen(true)}
+        >
+          <div className="grid grid-cols-2 gap-1 h-48 w-48 rounded-lg overflow-hidden bg-muted">
+            {displayPhotos.map((photo, idx) => (
+              <div 
+                key={idx} 
+                className="relative aspect-square overflow-hidden bg-muted hover:opacity-90 transition-opacity"
+              >
+                <Image
+                  src={photo}
+                  alt={`${experience.title} photo ${idx + 1}`}
+                  fill
+                  className="object-cover"
+                  sizes="96px"
+                />
+                {idx === 3 && remainingPhotos > 0 && (
+                  <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
+                    <span className="text-white text-2xl font-semibold">
+                      +{remainingPhotos}
+                    </span>
+                  </div>
+                )}
+              </div>
             ))}
           </div>
-        )}
-      </div>
+        </div>
+      )}
 
       {/* Photo Gallery Dialog */}
       {hasPhotos && (
