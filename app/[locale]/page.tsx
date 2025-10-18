@@ -9,6 +9,12 @@ import { Skills } from '@/components/portfolio/resume/skills';
 import { Section } from '@/components/portfolio/section';
 import { type Locale } from '@/i18n';
 import { getResumeData } from '@/lib/data';
+import {
+    generateJsonLd,
+    getOrganizationSchema,
+    getPersonSchema,
+    getWebsiteSchema
+} from '@/lib/structured-data';
 import { getTranslations } from 'next-intl/server';
 
 export default async function Home({
@@ -20,11 +26,25 @@ export default async function Home({
   const resumeData = await getResumeData(locale as Locale);
   const t = await getTranslations('sections');
 
+  // 結構化資料
+  const structuredData = [
+    getPersonSchema(),
+    getOrganizationSchema(),
+    getWebsiteSchema(),
+  ];
+
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-1 pt-[73px]">
-        <HeroSection info={resumeData.personalInfo} summary={resumeData.summary} />
+    <>
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={generateJsonLd(structuredData)}
+      />
+      
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-1 pt-[73px]">
+          <HeroSection info={resumeData.personalInfo} summary={resumeData.summary} />
 
         <Section id="resume-content" className="scroll-mt-20 border-t-0">
 
@@ -82,5 +102,6 @@ export default async function Home({
       </main>
       <Footer />
     </div>
+    </>
   );
 }

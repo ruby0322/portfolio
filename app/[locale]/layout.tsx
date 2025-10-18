@@ -1,21 +1,28 @@
+import { locales, type Locale } from '@/i18n';
+import { getHomeMetadata } from '@/lib/seo-metadata';
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
-import { ThemeProvider } from "next-themes";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
+import { ThemeProvider } from "next-themes";
+import { Geist } from "next/font/google";
 import { notFound } from 'next/navigation';
-import { locales, type Locale } from '@/i18n';
 import "../globals.css";
 
-const defaultUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "http://localhost:3000";
-
-export const metadata: Metadata = {
-  metadataBase: new URL(defaultUrl),
-  title: "Portfolio",
-  description: "Personal portfolio and resume",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  
+  const localeMap: Record<string, 'zh-TW' | 'zh-CN' | 'en-US'> = {
+    'zh-tw': 'zh-TW',
+    'zh-cn': 'zh-CN',
+    'en-us': 'en-US',
+  };
+  
+  return getHomeMetadata(localeMap[locale] || 'zh-TW');
+}
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
