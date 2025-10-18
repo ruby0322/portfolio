@@ -54,6 +54,12 @@ export function Header() {
               {t('resume')}
             </Link>
             <Link
+              href={`/${locale}/photography`}
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {t('photography')}
+            </Link>
+            <Link
               href={`/${locale}/services`}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >

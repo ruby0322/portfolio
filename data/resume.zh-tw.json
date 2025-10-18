@@ -14,36 +14,37 @@
       "instagram": "https://www.instagram.com/ruby.0322/"
     }
   },
-  "summary": "熱愛打造 AI 應用的全端工程師，畢業於台大資管系，目前於台灣微軟擔任實習生並計劃攻讀研究所。擅長將想法轉化為可擴展的解決方案，經歷橫跨黑客松奪獎到開發服務數百用戶的產品系統。對教學抱有熱忱，擔任講師與助教累積指導 500+ 位學生，使他具有良好溝通與領導能力。",
+  "summary": "熱愛打造 AI 軟體的全端工程師，畢業於台大資管系，目前於台灣微軟擔任實習生並計劃攻讀研究所。擅長將想法轉化為可擴展的解決方案，經歷橫跨黑客松奪獎到開發服務數百用戶的產品系統。對教學抱有熱忱，擔任講師與助教累積指導 500+ 位學生，使他具有良好溝通與領導能力。",
   "achievements": [
     {
       "title": "台積電校園黑客松 2024：第二名",
       "period": "2025 年 2 月",
       "outcomes": [
         "在兩天內開發 AI 維護工具組，包含網頁與 VSCode 介面，採用 Vertex AI、FastAPI、LangChain，並部署於 GCE 及 GKE。",
-        "從 168 隊中脫穎而出，入選 24 強並獲得第二名。"
+        "在初賽程式測驗中，從 168 隊中脫穎而出，入選 24 強並獲得第二名。"
       ],
       "link": "https://www.tsmc.com/static/english/careers/Careerhack/index.html",
       "photos": ["/resume/D2_2025 TSMC IT CareerHack Award_D1.jpg", "/resume/2025 TSMC IT CareerHack_Certificate of Participation_D1.jpg"]
     },
     {
-      "title": "2025 臺灣數創大賞：決賽入圍",
-      "period": "進行中（決賽 10/17）",
+      "title": "2025 臺灣數創大賞：佳作",
+      "period": "2025 年 10 月",
       "outcomes": [
         "開發全方位 AI 履歷編輯器，整合評估、STAR 重構與智能問答最佳化功能，採用 OpenAI API、Next.js 及 Supabase。",
-        "於初賽從 100 多隊中脫穎而出，入選 14 強決賽。"
+        "於初賽從 150+ 隊中脫穎而出，入選 14 強決賽，並獲得佳作（Top 7）。"
       ],
       "link": "https://render-resume.com/",
       "photos": [
-        "/resume/renderresume-screenshot.png",
-        "/resume/renderresume-finalist.png"
+        "/resume/renderresume/renderresume-screenshot.png",
+        "/resume/renderresume/renderresume-poster.png",
+        "/resume/renderresume/renderresume-finalist.png"
       ]
     },
     {
       "title": "Coding 101 競賽 2023：決賽入圍",
       "period": "2023",
-      "outcomes": [],
-      "link": ""
+      "outcomes": [], 
+      "photos": ["/resume/plink-poster.png"]
     }
   ],
   "experience": [
@@ -54,14 +55,20 @@
       "outcomes": [
         "身為 ISD 台積電 OnePlatform 團隊的研發實習生，我受託主導一項多方合作軟體專案的測試策略與執行。與華碩、研華、微軟協作，推動專案順利交付與驗收。"
       ],
-      "link": ""
+      "link": "",
+      "photos": [
+        "/resume/microsoft-internship-certificate.png"
+      ]
     },
     {
       "title": "資訊社指導老師",
       "company": "中山女中、大同高中",
       "period": "2021 年至今",
       "outcomes": [],
-      "link": ""
+      "photos": [
+        "/resume/datong-advisor.png",
+        "/resume/zhongshan-advisor.jpg"
+      ]
     },
     {
       "title": "課程助教（5 門課程）",
@@ -72,14 +79,18 @@
         "資管系：資料結構與進階程式設計、系統分析與設計、行銷管理、地下微積分",
         "協助學生總計超過 500 人"
       ],
-      "link": ""
+      "photos": [
+        "/resume/teaching/calc.jpg"
+      ]
     },
     {
       "title": "講師",
       "company": "台大資訊之芽 C 語法班",
       "period": "",
       "outcomes": [],
-      "link": ""
+      "photos": [
+        "/resume/teaching/sprout.png"
+      ]
     }
   ],
   "education": [
@@ -91,7 +102,7 @@
         "畢業 GPA 3.88、資訊相關選修 GPA 4.11",
         "核心課程：網路服務程式設計、深度學習應用、雲端原生開發、資訊檢索與文字探勘導論、系統分析與設計"
       ],
-      "link": "/resume/學位證明_中文.pdf"
+      "photos": ["/resume/bachelor-degree-certifcate.png"]
     },
     {
       "degree": "普通班",
@@ -115,7 +126,14 @@
       ],
       "outcomes": [
         "服務 300 多位月活躍用戶，整合任務管理、動態表單建構器、即時分析儀表板及電子郵件通知系統，減少行政負擔。",
-        "設計完整的 RBAC 安全架構，維持完整資料隔離與合規性。"
+        "設計完整的 RBAC 安全架構，維持完整資料隔離與合規性。",
+        "開發表單系統的檔案上傳功能，整合 Google Drive API 建立完整的檔管系統，提升文件管理效率。"
+      ],
+      "photos": [
+        "/resume/nchu-tutoring-program-dashboard/nchu-tutoring-program-dashboard-screenshot1.png",
+        "/resume/nchu-tutoring-program-dashboard/nchu-tutoring-program-dashboard-screenshot2.png",
+        "/resume/nchu-tutoring-program-dashboard/nchu-tutoring-program-dashboard-screenshot3.png",
+        "/resume/nchu-tutoring-program-dashboard/nchu-tutoring-program-dashboard-screenshot4.png"
       ]
     },
     {
@@ -132,7 +150,19 @@
         "在 VPS 上使用 Docker 部署可擴展的系統架構。",
         "透過將 NoSQL 資料庫遷移至 PostgreSQL 並安裝向量索引，減少 70% 處理時間。"
       ],
-      "link": "/resume/資管專題.pdf"
+      "link": "/resume/資管專題.pdf",
+      "photos": [
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot1.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot2.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot3.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot4.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot5.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot6.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot7.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot8.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot9.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot10.jpg"
+      ]
     },
     {
       "name": "2024 台大藝術季城市尋寶網站",

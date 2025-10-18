@@ -25,7 +25,7 @@
         "信息相关选修 GPA：4.11",
         "核心课程：网络服务程序设计、深度学习应用、云原生开发、信息检索与文本挖掘导论、系统分析与设计"
       ],
-      "link": "/resume/學位證明_中文.pdf"
+      "photos": ["/resume/bachelor-degree-certifcate.png"]
     },
     {
       "degree": "普通班",
@@ -46,14 +46,21 @@
       "outcomes": [
         "身为 ISD 台积电 OnePlatform 团队的研发实习生，我受託主导一项多方合作软体专案的测试策略与执行。与华硕、研华、微软协作，推动专案顺利交付与验收。"
       ],
-      "link": ""
+      "photos": [
+        "/resume/microsoft-internship-certificate.png"
+      ]
     },
     {
       "title": "信息社指导老师",
       "company": "中山女中、大同高中",
       "period": "2021 年至今",
       "outcomes": [],
-      "link": ""
+      "photos": [
+        "/resume/datong-advisor.png",
+        "/resume/zhongshan-advisor.jpg",
+        "/resume/teaching/zhongshan.webp",
+        "/resume/teaching/datong1.jpg"
+      ]
     },
     {
       "title": "课程助教（5 门课程）",
@@ -64,14 +71,18 @@
         "资管系：数据结构与进阶程序设计、系统分析与设计、营销管理、地下微积分",
         "协助学生总计超过 500 人"
       ],
-      "link": ""
+      "photos": [
+        "/resume/teaching/calc.jpg"
+      ]
     },
     {
       "title": "讲师",
       "company": "台大资讯之芽 C 语法班",
       "period": "",
       "outcomes": [],
-      "link": ""
+      "photos": [
+        "/resume/teaching/sprout.png"
+      ]
     }
   ],
   "achievements": [
@@ -80,29 +91,30 @@
       "period": "2025 年 2 月",
       "outcomes": [
         "在两天内开发 AI 维护工具组，包含网页与 VSCode 界面，采用 Vertex AI、FastAPI、LangChain，并部署于 GCE 及 GKE。",
-        "从 168 队中脱颖而出，入选 24 强并获得第二名。"
+        "在初赛程式测验中，从 168 队中脱颖而出，入选 24 强并获得第二名。"
       ],
       "link": "https://www.tsmc.com/static/english/careers/Careerhack/index.html",
       "photos": ["/resume/D2_2025 TSMC IT CareerHack Award_D1.jpg", "/resume/2025 TSMC IT CareerHack_Certificate of Participation_D1.jpg"]
     },
     {
-      "title": "2025 台湾数创大赏：决赛入围",
-      "period": "进行中（决赛 10/17）",
+      "title": "2025 台湾数创大赏：佳作",
+      "period": "2025 年 10 月",
       "outcomes": [
         "开发全方位 AI 简历编辑器，整合评估、STAR 重构与智能问答优化功能，采用 OpenAI API、Next.js 及 Supabase。",
-        "于初赛从 100 多队中脱颖而出，入选 14 强决赛。"
+        "于初赛从 150+ 队中脱颖而出，入选 14 强决赛，并获得佳作（Top 7）。"
       ],
       "link": "https://render-resume.com/",
       "photos": [
-        "/resume/renderresume-screenshot.png",
-        "/resume/renderresume-finalist.png"
+        "/resume/renderresume/renderresume-screenshot.png",
+        "/resume/renderresume/renderresume-poster.png",
+        "/resume/renderresume/renderresume-finalist.png"
       ]
     },
     {
       "title": "Coding 101 竞赛 2023：决赛入围",
       "period": "2023",
-      "outcomes": [],
-      "link": ""
+      "outcomes": [], 
+      "photos": ["/resume/plink-poster.png"]
     }
   ],
   "projects": [
@@ -116,7 +128,14 @@
       ],
       "outcomes": [
         "服务 300 多位月活跃用户，整合任务管理、动态表单构建器、实时分析仪表板及电子邮件通知系统，减少行政负担。",
-        "设计完整的 RBAC 安全架构，维持完整数据隔离与合规性。"
+        "设计完整的 RBAC 安全架构，维持完整数据隔离与合规性。",
+        "开发表单系统的文件上传功能，整合 Google Drive API 建立完整的档管系统，提升文件管理效率。"
+      ],
+      "photos": [
+        "/resume/nchu-tutoring-program-dashboard/nchu-tutoring-program-dashboard-screenshot1.png",
+        "/resume/nchu-tutoring-program-dashboard/nchu-tutoring-program-dashboard-screenshot2.png",
+        "/resume/nchu-tutoring-program-dashboard/nchu-tutoring-program-dashboard-screenshot3.png",
+        "/resume/nchu-tutoring-program-dashboard/nchu-tutoring-program-dashboard-screenshot4.png"
       ]
     },
     {
@@ -133,7 +152,19 @@
         "在 VPS 上使用 Docker 部署可扩展的系统架构。",
         "通过将 NoSQL 数据库迁移至 PostgreSQL 并安装向量索引，减少 70% 处理时间。"
       ],
-      "link": "/resume/資管專題.pdf"
+      "link": "/resume/資管專題.pdf",
+      "photos": [
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot1.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot2.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot3.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot4.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot5.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot6.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot7.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot8.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot9.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot10.jpg"
+      ]
     },
     {
       "name": "2024 台大艺术季城市寻宝网站",

@@ -27,23 +27,24 @@
       "photos": ["/resume/D2_2025 TSMC IT CareerHack Award_D1.jpg", "/resume/2025 TSMC IT CareerHack_Certificate of Participation_D1.jpg"]
     },
     {
-      "title": "Taiwan Digital Innovation Awards 2025: Finalist",
-      "period": "Ongoing (Finals on Oct 17)",
+      "title": "Taiwan Digital Innovation Awards 2025: Honorable Mention",
+      "period": "Oct 2025",
       "outcomes": [
         "Developed a comprehensive AI resume editor featuring evaluation, STAR restructuring, and intelligent Q&A optimization using OpenAI API, Next.js, and Supabase.",
-        "Selected as one of 14 finalists from 100+ teams in the preliminary round."
+        "Selected as one of 14 finalists from 150+ teams, and received Honorable Mention (Top 7) in the final."
       ],
       "link": "https://render-resume.com/",
       "photos": [
-        "/resume/renderresume-screenshot.png",
-        "/resume/renderresume-finalist.png"
+        "/resume/renderresume/renderresume-screenshot.png",
+        "/resume/renderresume/renderresume-poster.png",
+        "/resume/renderresume/renderresume-finalist.png"
       ]
     },
     {
       "title": "Coding 101 Competition 2023: Finalist",
       "period": "2023",
-      "outcomes": [],
-      "link": ""
+      "outcomes": [], 
+      "photos": ["/resume/plink-poster.png"]
     }
   ],
   "experience": [
@@ -54,7 +55,9 @@
       "outcomes": [
         "As an R&D Intern @ ISD TSMC OnePlatform team, I was entrusted to lead the testing strategy and execution for a multi-partner software project. Collaborating with ASUS, Advantech, and Microsoft, I've been driving the project toward successful delivery and acceptance."
       ],
-      "link": ""
+      "photos": [
+        "/resume/microsoft-internship-certificate.png"
+      ]
     },
     {
       "title": "Information Club Advisor",
@@ -72,14 +75,18 @@
         "IM Dept: Data Structures & Advanced Programming, Systems Analysis & Design, Marketing Management, Underground Calculus",
         "Assisted 500+ students in total"
       ],
-      "link": ""
+      "photos": [
+        "/resume/teaching/calc.jpg"
+      ]
     },
     {
       "title": "Lecturer",
       "company": "NTU CSIE Sprout C Programming Course",
       "period": "",
       "outcomes": [],
-      "link": ""
+      "photos": [
+        "/resume/teaching/sprout.png"
+      ]
     }
   ],
   "education": [
@@ -92,7 +99,7 @@
         "CS-related Elective GPA: 4.11",
         "Key Courses: Web Programming, Applied Deep Learning, Cloud Native Application Development, Introduction to Information Retrieval and Text Mining, Systems Analysis and Design"
       ],
-      "link": "/resume/學位證明_英文.pdf"
+      "photos": ["/resume/bachelor-degree-certifcate.png"]
     },
     {
       "degree": "High School Diploma",
@@ -102,7 +109,10 @@
       "outcomes": [
         "Top 5% of class"
       ],
-      "link": ""
+      "photos": [
+        "/resume/datong-advisor.png",
+        "/resume/zhongshan-advisor.jpg"
+      ]
     }
   ],
   "projects": [
@@ -116,7 +126,14 @@
       ],
       "outcomes": [
         "Served 300+ MAU, integrating task management, dynamic form builders, real-time analytics dashboard, and email notification system, reducing administrative overhead.",
-        "Designed a comprehensive RBAC security architecture, maintaining complete data isolation and compliance."
+        "Designed a comprehensive RBAC security architecture, maintaining complete data isolation and compliance.",
+        "Developed form system file upload functionality integrated with Google Drive API, establishing a complete document management system to enhance file management efficiency."
+      ],
+      "photos": [
+        "/resume/nchu-tutoring-program-dashboard/nchu-tutoring-program-dashboard-screenshot1.png",
+        "/resume/nchu-tutoring-program-dashboard/nchu-tutoring-program-dashboard-screenshot2.png",
+        "/resume/nchu-tutoring-program-dashboard/nchu-tutoring-program-dashboard-screenshot3.png",
+        "/resume/nchu-tutoring-program-dashboard/nchu-tutoring-program-dashboard-screenshot4.png"
       ]
     },
     {
@@ -133,7 +150,19 @@
         "Deployed a scalable system architecture with Docker on a VPS.",
         "Reduced processing time by 70% by migrating no-sql database to PostgreSQL and installing vector indexing."
       ],
-      "link": "/resume/資管專題.pdf"
+      "link": "/resume/資管專題.pdf",
+      "photos": [
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot1.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot2.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot3.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot4.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot5.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot6.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot7.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot8.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot9.jpg",
+        "/resume/oneclick-outfit/oneclick-outfit-screenshot10.jpg"
+      ]
     },
     {
       "name": "NTU Art Festival 2024 Riddle City Treasure Hunt Website",

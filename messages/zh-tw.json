@@ -1,6 +1,7 @@
 {
   "nav": {
     "resume": "專業履歷",
+    "photography": "攝影",
     "services": "服務"
   },
   "services": {
@@ -30,6 +31,15 @@
     "education": "學歷",
     "projects": "專案",
     "skills": "技能"
+  },
+  "photography": {
+    "title": "攝影",
+    "listView": "列表檢視",
+    "galleryView": "畫廊檢視",
+    "postsView": "貼文檢視",
+    "noPhotosAvailable": "暫無照片",
+    "relatedPosts": "相關貼文",
+    "followOnInstagram": "在 IG 上追蹤我"
   },
   "common": {
     "present": "至今"

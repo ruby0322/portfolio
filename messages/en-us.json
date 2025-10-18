@@ -1,6 +1,7 @@
 {
   "nav": {
     "resume": "Professional Resume",
+    "photography": "Photography",
     "services": "Services"
   },
   "services": {
@@ -30,6 +31,15 @@
     "education": "Education",
     "projects": "Projects",
     "skills": "Skills"
+  },
+  "photography": {
+    "title": "Photography",
+    "listView": "List View",
+    "galleryView": "Gallery View",
+    "postsView": "Posts View",
+    "noPhotosAvailable": "No photos available",
+    "relatedPosts": "Related Posts",
+    "followOnInstagram": "Follow me on Instagram"
   },
   "common": {
     "present": "Present"

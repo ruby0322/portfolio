@@ -1,6 +1,7 @@
 {
   "nav": {
     "resume": "专业简历",
+    "photography": "摄影",
     "services": "服务"
   },
   "services": {
@@ -30,6 +31,15 @@
     "education": "学历",
     "projects": "项目",
     "skills": "技能"
+  },
+  "photography": {
+    "title": "摄影",
+    "listView": "列表视图",
+    "galleryView": "画廊视图",
+    "postsView": "贴文视图",
+    "noPhotosAvailable": "暂无照片",
+    "relatedPosts": "相关贴文",
+    "followOnInstagram": "在 Instagram 上关注我"
   },
   "common": {
     "present": "至今"

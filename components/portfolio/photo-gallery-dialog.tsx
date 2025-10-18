@@ -3,12 +3,13 @@
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 interface PhotoGalleryDialogProps {
   photos: string[];
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  initialIndex?: number;
 }
 
 interface ImageDimensions {
@@ -16,9 +17,15 @@ interface ImageDimensions {
   height: number;
 }
 
-export function PhotoGalleryDialog({ photos, open, onOpenChange }: PhotoGalleryDialogProps) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+export function PhotoGalleryDialog({ photos, open, onOpenChange, initialIndex = 0 }: PhotoGalleryDialogProps) {
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [imageDimensions, setImageDimensions] = useState<ImageDimensions | null>(null);
+
+  useEffect(() => {
+    if (open) {
+      setCurrentIndex(initialIndex);
+    }
+  }, [open, initialIndex]);
 
   useEffect(() => {
     if (!open) return;
@@ -29,6 +36,12 @@ export function PhotoGalleryDialog({ photos, open, onOpenChange }: PhotoGalleryD
       setImageDimensions({ width: img.width, height: img.height });
     };
   }, [currentIndex, photos, open]);
+
+  const handleClose = useCallback(() => {
+    onOpenChange(false);
+    setCurrentIndex(0);
+    setImageDimensions(null);
+  }, [onOpenChange]);
 
   useEffect(() => {
     if (!open) return;
@@ -46,7 +59,7 @@ export function PhotoGalleryDialog({ photos, open, onOpenChange }: PhotoGalleryD
       document.removeEventListener('keydown', handleEscape);
       document.body.style.overflow = '';
     };
-  }, [open]);
+  }, [open, handleClose]);
 
   const handlePrevious = () => {
     setCurrentIndex((prev) => (prev === 0 ? photos.length - 1 : prev - 1));
@@ -54,12 +67,6 @@ export function PhotoGalleryDialog({ photos, open, onOpenChange }: PhotoGalleryD
 
   const handleNext = () => {
     setCurrentIndex((prev) => (prev === photos.length - 1 ? 0 : prev + 1));
-  };
-
-  const handleClose = () => {
-    onOpenChange(false);
-    setCurrentIndex(0);
-    setImageDimensions(null);
   };
 
   // Calculate optimal dimensions
@@ -113,18 +120,6 @@ export function PhotoGalleryDialog({ photos, open, onOpenChange }: PhotoGalleryD
           <X className="h-6 w-6" />
         </Button>
 
-        {/* Previous button */}
-        {photos.length > 1 && (
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 z-50 text-white hover:bg-white/20"
-            onClick={handlePrevious}
-          >
-            <ChevronLeft className="h-8 w-8" />
-          </Button>
-        )}
-
         {/* Image container */}
         <div className="relative transition-all duration-300 ease-in-out" style={dimensions}>
           <Image
@@ -136,26 +131,45 @@ export function PhotoGalleryDialog({ photos, open, onOpenChange }: PhotoGalleryD
             sizes="100vw"
           />
         </div>
+      </div>
 
-        {/* Next button */}
-        {photos.length > 1 && (
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 z-50 text-white hover:bg-white/20"
-            onClick={handleNext}
-          >
-            <ChevronRight className="h-8 w-8" />
-          </Button>
-        )}
+      {/* Navigation buttons positioned at screen edges */}
+      {/* Previous button */}
+      {photos.length > 1 && (
+        <Button
+          variant="ghost"
+          size="icon"
+          className="fixed left-4 top-1/2 -translate-y-1/2 z-50 text-white hover:bg-white/20 bg-black/20 backdrop-blur-sm border border-white/20"
+          onClick={(e) => {
+            e.stopPropagation();
+            handlePrevious();
+          }}
+        >
+          <ChevronLeft className="h-8 w-8" />
+        </Button>
+      )}
+
+      {/* Next button */}
+      {photos.length > 1 && (
+        <Button
+          variant="ghost"
+          size="icon"
+          className="fixed right-4 top-1/2 -translate-y-1/2 z-50 text-white hover:bg-white/20 bg-black/20 backdrop-blur-sm border border-white/20"
+          onClick={(e) => {
+            e.stopPropagation();
+            handleNext();
+          }}
+        >
+          <ChevronRight className="h-8 w-8" />
+        </Button>
+      )}
 
         {/* Image counter */}
         {photos.length > 1 && (
-          <div className="absolute -bottom-14 left-1/2 -translate-x-1/2 z-50 bg-black/50 text-white px-4 py-2 rounded-full text-sm">
+          <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 bg-black/50 text-white px-4 py-2 rounded-full text-sm backdrop-blur-sm border border-white/20">
             {currentIndex + 1} / {photos.length}
           </div>
         )}
-      </div>
     </div>
   );
 }
