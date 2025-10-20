@@ -2,7 +2,10 @@
   "nav": {
     "resume": "Professional Resume",
     "photography": "Photography",
-    "services": "Services"
+    "services": "Services",
+    "transcribe": "Transcribe",
+    "menu": "Menu",
+    "settings": "Settings"
   },
   "services": {
     "title": "Services",
@@ -46,5 +49,32 @@
   },
   "footer": {
     "copyright": "© {year} Kuan-Cheng (James) Ku. All rights reserved."
+  },
+  "transcribe": {
+    "title": "Video Transcription",
+    "subtitle": "Upload a video file and get an accurate text transcription using OpenAI Whisper",
+    "uploadTitle": "Upload Video",
+    "uploadDescription": "Drag and drop a video file here, or click to select. Large files will be automatically split into chunks for processing. Supported formats: MP4, MP3, WAV, M4A, and more.",
+    "uploadDescriptionDragging": "Drop your file here...",
+    "chooseFile": "Choose File",
+    "transcribe": "Transcribe",
+    "transcribing": "Transcribing...",
+    "cancel": "Cancel",
+    "processing": "Processing your video...",
+    "waiting": "Waiting for transcription to begin...",
+    "resultTitle": "Transcription Result",
+    "resultDescription": "Your video has been successfully transcribed",
+    "resultDescriptionProgress": "Transcription in progress...",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "download": "Download",
+    "fileTooLarge": "Please select a video file first",
+    "passkeyRequired": "Please enter the passkey to continue",
+    "passkeyLabel": "Access Passkey",
+    "passkeyPlaceholder": "Enter passkey...",
+    "passkeyDescription": "Enter the required passkey to access the transcription service",
+    "chunkErrors": "Some chunks failed to transcribe:",
+    "chunkError": "Chunk {index}: {error}",
+    "invalidFile": "Please drop a valid video or audio file"
   }
 }

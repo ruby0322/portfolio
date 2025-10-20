@@ -24,6 +24,13 @@ const nextConfig: NextConfig = {
   
   // Trailing slash
   trailingSlash: false,
+  
+  // Server Actions configuration
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '1024mb',
+    },
+  },
 };
 
 export default withNextIntl(nextConfig);

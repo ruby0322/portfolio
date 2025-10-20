@@ -2,7 +2,10 @@
   "nav": {
     "resume": "专业简历",
     "photography": "摄影",
-    "services": "服务"
+    "services": "服务",
+    "transcribe": "语音转文字",
+    "menu": "菜单",
+    "settings": "设置"
   },
   "services": {
     "title": "服务项目",
@@ -46,5 +49,32 @@
   },
   "footer": {
     "copyright": "© {year} 顾宽証 (James Ku)。保留所有权利。"
+  },
+  "transcribe": {
+    "title": "视频语音转文字",
+    "subtitle": "上传视频文件，使用 OpenAI Whisper 获得准确的文字转录",
+    "uploadTitle": "上传视频",
+    "uploadDescription": "拖放视频文件到此处，或点击选择。大文件会自动分割成小块进行处理。支持格式：MP4、MP3、WAV、M4A 等。",
+    "uploadDescriptionDragging": "将文件拖放到此处...",
+    "chooseFile": "选择文件",
+    "transcribe": "开始转录",
+    "transcribing": "转录中...",
+    "cancel": "终止",
+    "processing": "正在处理您的视频...",
+    "waiting": "等待转录开始...",
+    "resultTitle": "转录结果",
+    "resultDescription": "您的视频已成功转录",
+    "resultDescriptionProgress": "转录进行中...",
+    "copy": "复制",
+    "copied": "已复制！",
+    "download": "下载",
+    "fileTooLarge": "请先选择视频文件",
+    "passkeyRequired": "请输入密钥以继续",
+    "passkeyLabel": "访问密钥",
+    "passkeyPlaceholder": "输入密钥...",
+    "passkeyDescription": "输入所需的密钥以访问转录服务",
+    "chunkErrors": "部分区块转录失败：",
+    "chunkError": "区块 {index}：{error}",
+    "invalidFile": "请拖放有效的视频或音频文件"
   }
 }

@@ -2,7 +2,10 @@
   "nav": {
     "resume": "專業履歷",
     "photography": "攝影",
-    "services": "服務"
+    "services": "服務",
+    "transcribe": "語音轉文字",
+    "menu": "選單",
+    "settings": "設定"
   },
   "services": {
     "title": "服務項目",
@@ -46,5 +49,32 @@
   },
   "footer": {
     "copyright": "© {year} 顧寬証 (James Ku)。保留所有權利。"
+  },
+  "transcribe": {
+    "title": "影片語音轉文字",
+    "subtitle": "上傳影片檔案，使用 OpenAI Whisper 獲得準確的文字轉錄",
+    "uploadTitle": "上傳影片",
+    "uploadDescription": "拖放影片檔案到此處，或點擊選擇。大檔案會自動分割成小塊進行處理。支援格式：MP4、MP3、WAV、M4A 等。",
+    "uploadDescriptionDragging": "將檔案拖放到此處...",
+    "chooseFile": "選擇檔案",
+    "transcribe": "開始轉錄",
+    "transcribing": "轉錄中...",
+    "cancel": "終止",
+    "processing": "正在處理您的影片...",
+    "waiting": "等待轉錄開始...",
+    "resultTitle": "轉錄結果",
+    "resultDescription": "您的影片已成功轉錄",
+    "resultDescriptionProgress": "轉錄進行中...",
+    "copy": "複製",
+    "copied": "已複製！",
+    "download": "下載",
+    "fileTooLarge": "請先選擇影片檔案",
+    "passkeyRequired": "請輸入密鑰以繼續",
+    "passkeyLabel": "存取密鑰",
+    "passkeyPlaceholder": "輸入密鑰...",
+    "passkeyDescription": "輸入所需的密鑰以存取轉錄服務",
+    "chunkErrors": "部分區塊轉錄失敗：",
+    "chunkError": "區塊 {index}：{error}",
+    "invalidFile": "請拖放有效的影片或音訊檔案"
   }
 }

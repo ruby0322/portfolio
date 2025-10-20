@@ -10,5 +10,5 @@ const intlMiddleware = createIntlMiddleware({
 export default intlMiddleware;
 
 export const config = {
-  matcher: ['/', '/(zh-tw|zh-cn|en-us)/:path*', '/((?!_next|_vercel|.*\\..*).*)', '/api/:path*'],
+  matcher: ['/', '/(zh-tw|zh-cn|en-us)/:path*', '/((?!_next|_vercel|api|.*\\..*).*)'],
 };
