@@ -7,6 +7,11 @@
     "menu": "菜单",
     "settings": "设置"
   },
+  "theme": {
+    "light": "浅色",
+    "dark": "深色",
+    "system": "系统"
+  },
   "services": {
     "title": "服务项目",
     "subtitle": "提供专业的软件开发与教学服务",

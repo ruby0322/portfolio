@@ -7,6 +7,11 @@
     "menu": "Menu",
     "settings": "Settings"
   },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
   "services": {
     "title": "Services",
     "subtitle": "Professional software development and tutoring services",
