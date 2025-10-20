@@ -1,5 +1,6 @@
 import { type UnifiedPersonalInfo } from '@/lib/schemas/resume';
 import { Github, Linkedin, Globe, Mail, Phone, MapPin } from 'lucide-react';
+import Image from 'next/image';
 
 interface PersonalInfoProps {
   info: UnifiedPersonalInfo;
@@ -8,10 +9,27 @@ interface PersonalInfoProps {
 export function PersonalInfo({ info }: PersonalInfoProps) {
   return (
     <div className="mb-12">
-      <h1 className="text-4xl font-bold mb-2">{info.name}</h1>
-      {info.title && (
-        <p className="text-xl text-muted-foreground mb-4">{info.title}</p>
-      )}
+      <div className="flex flex-col md:flex-row items-start md:items-center gap-6 mb-4">
+        <div className="flex-1">
+          <h1 className="text-4xl font-bold mb-2">{info.name}</h1>
+          {info.title && (
+            <p className="text-xl text-muted-foreground">{info.title}</p>
+          )}
+        </div>
+        {info.personalPhoto && (
+          <div className="flex-shrink-0">
+            <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden bg-muted">
+              <Image
+                src={info.personalPhoto}
+                alt={`${info.name} personal photo`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 96px, 128px"
+              />
+            </div>
+          </div>
+        )}
+      </div>
       <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
         {info.email && (
           <a

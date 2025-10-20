@@ -23,6 +23,7 @@ export const ProjectSchema = z.object({
 export const PhotographyDataSchema = z.object({
   bio: z.string().optional(),
   instagramLink: z.string().optional(),
+  personalPhoto: z.string().optional(),
   experience: z.array(z.object({
     title: z.string(),
     organization: z.string().optional(),

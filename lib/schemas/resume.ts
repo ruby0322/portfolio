@@ -19,6 +19,7 @@ export const UnifiedPersonalInfoSchema = z
     phone: z.string().optional(),
     location: z.string().optional(),
     links: UnifiedLinkSchema.optional(),
+    personalPhoto: z.string().optional(),
   })
   .partial();
 

@@ -3,6 +3,7 @@
 import { type UnifiedPersonalInfo } from '@/lib/schemas/resume';
 import { motion } from 'framer-motion';
 import { Download, Facebook, Github, Globe, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import Image from 'next/image';
 
 interface HeroSectionProps {
   info: UnifiedPersonalInfo;
@@ -54,12 +55,27 @@ export function HeroSection({ info, summary }: HeroSectionProps) {
           </motion.div>
 
           {summary && (
-            <motion.p
-              className="text-base md:text-lg text-foreground/80 leading-relaxed max-w-2xl font-light"
+            <motion.div
+              className="flex flex-col md:flex-row gap-8 items-center"
               variants={itemVariants}
             >
-              {summary}
-            </motion.p>
+              {info.personalPhoto && (
+                <div className="flex-shrink-0">
+                  <div className="relative w-32 h-32 md:w-40 md:h-40 overflow-hidden bg-muted">
+                    <Image
+                      src={info.personalPhoto}
+                      alt={`${info.name} personal photo`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 128px, 160px"
+                    />
+                  </div>
+                </div>
+              )}
+              <p className="text-base md:text-lg text-foreground/90 leading-relaxed max-w-2xl font-light flex-1">
+                {summary}
+              </p>
+            </motion.div>
           )}
 
           <motion.div

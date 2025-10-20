@@ -11,6 +11,7 @@ import { getPhotographyData } from '@/lib/data';
 import { type PhotographyData } from '@/lib/schemas/photography';
 import { Instagram, LayoutGrid, Link2, List } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
@@ -43,21 +44,38 @@ export default function PhotographyPage() {
         {/* Hero Section */}
         <Section className="border-t-0 pt-12">
           <div className="mb-8">
-            <h1 className="text-4xl font-light text-foreground mb-4">{t('title')}</h1>
-            {data.bio && (
-              <p className="text-lg text-muted-foreground mb-4">{data.bio}</p>
-            )}
-            {data.instagramLink && (
-              <a
-                href={data.instagramLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <Instagram className="h-4 w-4" />
-                {t('followOnInstagram')}
-              </a>
-            )}
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-8 mb-6">
+              <div className="flex-1">
+                <h1 className="text-4xl font-light text-foreground mb-4">{t('title')}</h1>
+                {data.bio && (
+                  <p className="text-lg text-muted-foreground mb-4">{data.bio}</p>
+                )}
+                {data.instagramLink && (
+                  <a
+                    href={data.instagramLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    <Instagram className="h-4 w-4" />
+                    {t('followOnInstagram')}
+                  </a>
+                )}
+              </div>
+              {data.personalPhoto && (
+                <div className="flex-shrink-0">
+                  <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-xl overflow-hidden bg-muted">
+                    <Image
+                      src={data.personalPhoto}
+                      alt="Personal photo"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 128px, 160px"
+                    />
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* View Toggle */}

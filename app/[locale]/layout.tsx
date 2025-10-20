@@ -1,5 +1,6 @@
 import { locales, type Locale } from '@/i18n';
 import { getHomeMetadata } from '@/lib/seo-metadata';
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
@@ -58,6 +59,7 @@ export default async function LocaleLayout({
             {children}
           </NextIntlClientProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
