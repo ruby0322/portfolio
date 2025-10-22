@@ -168,5 +168,70 @@
       ]
     }
   ],
-  "projects": []
+  "projects": [
+    {
+      "id": "ntu-astronomy-xinpu-2024",
+      "title": "NTU Astronomy Club 113 Autumn Observation @ Xinpu Elementary School",
+      "description": "Documented the autumn stargazing event organized by NTU Astronomy Club at Xinpu Elementary School, capturing the wonder of astronomy education and community engagement.",
+      "date": "2024",
+      "location": "Xinpu Elementary School",
+      "category": "Event Photography",
+      "coverImage": "/photography/xinpu/1131天文社秋觀-0695-2.jpg",
+      "photos": [
+        "/photography/xinpu/1131天文社秋觀-0695-2.jpg",
+        "/photography/xinpu/1131天文社秋觀-0697.jpg",
+        "/photography/xinpu/1131天文社秋觀-0704.jpg",
+        "/photography/xinpu/1131天文社秋觀-0709.jpg",
+        "/photography/xinpu/1131天文社秋觀-0830.jpg",
+        "/photography/xinpu/1131天文社秋觀-0860.jpg"
+      ],
+      "tags": ["astronomy", "education", "community", "night photography", "NTU"]
+    },
+    {
+      "id": "hong-kong-lights-show-2024",
+      "title": "Hong Kong Tsim Sha Tsui Pier Light Show",
+      "description": "Captured the spectacular light show at Hong Kong's Tsim Sha Tsui Pier, showcasing the vibrant nightlife and iconic skyline of Victoria Harbour.",
+      "date": "2024",
+      "location": "Tsim Sha Tsui Pier, Hong Kong",
+      "category": "Night Photography",
+      "coverImage": "/photography/hong-kong/DSC_5473.jpg",
+      "photos": [
+        "/photography/hong-kong/DSC_5473.jpg",
+        "/photography/hong-kong/DSC_5480.jpg",
+        "/photography/hong-kong/DSC_5495.jpg"
+      ],
+      "tags": ["hong kong", "light show", "night photography", "cityscape", "victoria harbour"]
+    },
+    {
+      "id": "nccu-photo-club-badouzi-houtong-2024",
+      "title": "NCCU Photo Club: Badouzi & Houtong",
+      "description": "Photography excursion with NCCU Photo Club to Badouzi and Houtong, capturing the coastal landscapes, mining heritage, and local culture of these historic Taiwanese locations.",
+      "date": "2024",
+      "location": "Badouzi & Houtong, Taiwan",
+      "category": "Landscape Photography",
+      "coverImage": "/photography/nccu-photo-club/DSC_4727.jpeg",
+      "photos": [
+        "/photography/nccu-photo-club/DSC_4727.jpeg",
+        "/photography/nccu-photo-club/DSC_4732.jpeg",
+        "/photography/nccu-photo-club/DSC_4734.jpeg",
+        "/photography/nccu-photo-club/DSC_4748.jpeg",
+        "/photography/nccu-photo-club/DSC_4778.jpeg",
+        "/photography/nccu-photo-club/DSC_4783.jpeg",
+        "/photography/nccu-photo-club/DSC_4786.jpeg",
+        "/photography/nccu-photo-club/DSC_4789.jpeg",
+        "/photography/nccu-photo-club/DSC_4803.JPG",
+        "/photography/nccu-photo-club/DSC_4811.jpeg",
+        "/photography/nccu-photo-club/DSC_4822.jpeg",
+        "/photography/nccu-photo-club/DSC_4829.jpeg",
+        "/photography/nccu-photo-club/DSC_4842.jpeg",
+        "/photography/nccu-photo-club/DSC_4851.jpeg",
+        "/photography/nccu-photo-club/DSC_4858.JPG",
+        "/photography/nccu-photo-club/DSC_4869.JPG",
+        "/photography/nccu-photo-club/DSC_4887.JPG",
+        "/photography/nccu-photo-club/IMG_9004.JPG",
+        "/photography/nccu-photo-club/IMG_9025.JPG"
+      ],
+      "tags": ["nccu", "photo club", "badouzi", "houtong", "landscape", "coastal", "mining heritage", "taiwan"]
+    }
+  ]
 }

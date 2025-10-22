@@ -8,21 +8,31 @@ import { PhotoGalleryDialog } from '../photo-gallery-dialog';
 
 interface GalleryViewProps {
   experience: PhotographyData['experience'];
+  projects: PhotographyData['projects'];
 }
 
-export function GalleryView({ experience }: GalleryViewProps) {
+export function GalleryView({ experience, projects }: GalleryViewProps) {
   const [selectedPhotos, setSelectedPhotos] = useState<string[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const t = useTranslations('photography');
 
-  // Flatten all photos from all experience items
-  const allPhotos = experience?.flatMap((exp) =>
-    exp.photos?.map((photoUrl) => ({
-      url: photoUrl,
-      title: exp.title,
-      organization: exp.organization,
-    })) || []
-  ) || [];
+  // Flatten all photos from all experience items and projects
+  const allPhotos = [
+    ...(experience?.flatMap((exp) =>
+      exp.photos?.map((photoUrl) => ({
+        url: photoUrl,
+        title: exp.title,
+        organization: exp.organization,
+      })) || []
+    ) || []),
+    ...(projects?.flatMap((project) =>
+      project.photos?.map((photoUrl) => ({
+        url: photoUrl,
+        title: project.title,
+        organization: project.location,
+      })) || []
+    ) || [])
+  ];
 
   const openGallery = (photoUrl: string) => {
     const index = allPhotos.findIndex((p) => p.url === photoUrl);

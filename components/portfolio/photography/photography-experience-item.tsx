@@ -30,8 +30,30 @@ export function PhotographyExperienceItem({ experience }: PhotographyExperienceI
 
   const hasPhotos = experience.photos && experience.photos.length > 0;
   const hasEmbeds = experience.embeds && experience.embeds.length > 0;
-  const displayPhotos = hasPhotos ? experience.photos!.slice(0, 4) : [];
-  const remainingPhotos = hasPhotos ? Math.max(0, experience.photos!.length - 4) : 0;
+  
+  // Dynamic layout based on photo count
+  const getThumbnailLayout = () => {
+    if (!hasPhotos) return { photos: [], layout: '', remaining: 0 };
+    
+    const photoCount = experience.photos!.length;
+    const photos = experience.photos!.slice(0, 4);
+    const remaining = Math.max(0, photoCount - 4);
+    
+    let layout = '';
+    if (photoCount === 1) {
+      layout = 'grid-cols-1';
+    } else if (photoCount === 2) {
+      layout = 'grid-cols-2';
+    } else if (photoCount === 3) {
+      layout = 'grid-cols-2';
+    } else {
+      layout = 'grid-cols-2';
+    }
+    
+    return { photos, layout, remaining };
+  };
+  
+  const { photos: displayPhotos, layout, remaining: remainingPhotos } = getThumbnailLayout();
 
   return (
     <div className="flex flex-col md:flex-row gap-6 group">
@@ -86,28 +108,34 @@ export function PhotographyExperienceItem({ experience }: PhotographyExperienceI
           className="flex-shrink-0 w-full md:w-48 h-48 cursor-pointer flex items-center justify-center"
           onClick={() => setPhotoDialogOpen(true)}
         >
-          <div className="grid grid-cols-2 gap-1 h-48 w-48 rounded-lg overflow-hidden bg-muted">
-            {displayPhotos.map((photo, idx) => (
-              <div 
-                key={idx} 
-                className="relative aspect-square overflow-hidden bg-muted hover:opacity-90 transition-opacity"
-              >
-                <Image
-                  src={photo}
-                  alt={`${experience.title} photo ${idx + 1}`}
-                  fill
-                  className="object-cover"
-                  sizes="96px"
-                />
-                {idx === 3 && remainingPhotos > 0 && (
-                  <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
-                    <span className="text-white text-2xl font-semibold">
-                      +{remainingPhotos}
-                    </span>
-                  </div>
-                )}
-              </div>
-            ))}
+          <div className={`grid ${layout} gap-1 h-48 w-48 rounded-lg overflow-hidden bg-muted`}>
+            {displayPhotos.map((photo, idx) => {
+              // Special handling for 3 photos: first two on top row, third spans bottom row
+              const isThirdPhoto = displayPhotos.length === 3 && idx === 2;
+              return (
+                <div 
+                  key={idx} 
+                  className={`relative overflow-hidden bg-muted hover:opacity-90 transition-opacity ${
+                    isThirdPhoto ? 'col-span-2 aspect-[2/1]' : 'aspect-square'
+                  }`}
+                >
+                  <Image
+                    src={photo}
+                    alt={`${experience.title} photo ${idx + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="96px"
+                  />
+                  {idx === 3 && remainingPhotos > 0 && (
+                    <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
+                      <span className="text-white text-2xl font-semibold">
+                        +{remainingPhotos}
+                      </span>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       )}

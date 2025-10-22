@@ -5,10 +5,11 @@ import { InstagramEmbed } from './instagram-embed';
 
 interface PostsViewProps {
   experience: PhotographyData['experience'];
+  projects: PhotographyData['projects'];
 }
 
 export function PostsView({ experience }: PostsViewProps) {
-  // Flatten all embeds from all experience items
+  // Flatten all embeds from all experience items (projects don't have embeds currently)
   const allEmbeds = experience?.flatMap((exp) =>
     exp.embeds?.map((embed) => ({
       ...embed,

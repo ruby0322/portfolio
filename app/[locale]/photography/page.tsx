@@ -4,6 +4,7 @@ import { Footer } from '@/components/portfolio/footer';
 import { Header } from '@/components/portfolio/header';
 import { GalleryView } from '@/components/portfolio/photography/gallery-view';
 import { PhotographyExperienceItem } from '@/components/portfolio/photography/photography-experience-item';
+import { PhotographyProjectItem } from '@/components/portfolio/photography/photography-project-item';
 import { PostsView } from '@/components/portfolio/photography/posts-view';
 import { Section } from '@/components/portfolio/section';
 import { Button } from '@/components/ui/button';
@@ -119,11 +120,21 @@ export default function PhotographyPage() {
                   </div>
                 </div>
               )}
+              {data.projects && data.projects.length > 0 && (
+                <div className="mb-16">
+                  <h2 className="text-2xl font-light text-foreground mb-12">{tSections('projects')}</h2>
+                  <div className="space-y-12">
+                    {data.projects.map((project, idx) => (
+                      <PhotographyProjectItem key={idx} project={project} />
+                    ))}
+                  </div>
+                </div>
+              )}
             </Section>
           ) : viewMode === 'gallery' ? (
-            <GalleryView experience={data.experience || []} />
+            <GalleryView experience={data.experience || []} projects={data.projects || []} />
           ) : (
-            <PostsView experience={data.experience || []} />
+            <PostsView experience={data.experience || []} projects={data.projects || []} />
           )}
         </Section>
       </main>

@@ -16,7 +16,7 @@ export const ProjectSchema = z.object({
   location: z.string().optional(),
   category: z.string().optional(),
   coverImage: z.string(),
-  photos: z.array(PhotoItemSchema),
+  photos: z.array(z.string()).optional(),
   tags: z.array(z.string()).optional(),
 });
 

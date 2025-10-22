@@ -170,5 +170,70 @@
       ]
     }
   ],
-  "projects": []
+  "projects": [
+    {
+      "id": "ntu-astronomy-xinpu-2024",
+      "title": "台大天文社 113 秋季观测 @ 新埔国小",
+      "description": "记录台大天文社在新埔国小举办的秋季观星活动，捕捉天文教育与社区参与的美好瞬间。",
+      "date": "2024",
+      "location": "新埔国小",
+      "category": "活动摄影",
+      "coverImage": "/photography/xinpu/1131天文社秋觀-0695-2.jpg",
+      "photos": [
+        "/photography/xinpu/1131天文社秋觀-0695-2.jpg",
+        "/photography/xinpu/1131天文社秋觀-0697.jpg",
+        "/photography/xinpu/1131天文社秋觀-0704.jpg",
+        "/photography/xinpu/1131天文社秋觀-0709.jpg",
+        "/photography/xinpu/1131天文社秋觀-0830.jpg",
+        "/photography/xinpu/1131天文社秋觀-0860.jpg"
+      ],
+      "tags": ["天文", "教育", "社区", "夜间摄影", "台大"]
+    },
+    {
+      "id": "hong-kong-lights-show-2024",
+      "title": "香港尖沙嘴码头灯光秀",
+      "description": "记录香港尖沙嘴码头壮观的灯光秀，展现维多利亚港充满活力的夜景和标志性天际线。",
+      "date": "2024",
+      "location": "香港尖沙嘴码头",
+      "category": "夜间摄影",
+      "coverImage": "/photography/hong-kong/DSC_5473.jpg",
+      "photos": [
+        "/photography/hong-kong/DSC_5473.jpg",
+        "/photography/hong-kong/DSC_5480.jpg",
+        "/photography/hong-kong/DSC_5495.jpg"
+      ],
+      "tags": ["香港", "灯光秀", "夜间摄影", "城市景观", "维多利亚港"]
+    },
+    {
+      "id": "nccu-photo-club-badouzi-houtong-2024",
+      "title": "政大摄影社：八斗子、猴硐",
+      "description": "与政大摄影社一同前往八斗子和猴硐进行摄影外拍，记录这些历史悠久的台湾地点的海岸景观、矿业遗产和当地文化。",
+      "date": "2024",
+      "location": "八斗子、猴硐，台湾",
+      "category": "风景摄影",
+      "coverImage": "/photography/nccu-photo-club/DSC_4727.jpeg",
+      "photos": [
+        "/photography/nccu-photo-club/DSC_4727.jpeg",
+        "/photography/nccu-photo-club/DSC_4732.jpeg",
+        "/photography/nccu-photo-club/DSC_4734.jpeg",
+        "/photography/nccu-photo-club/DSC_4748.jpeg",
+        "/photography/nccu-photo-club/DSC_4778.jpeg",
+        "/photography/nccu-photo-club/DSC_4783.jpeg",
+        "/photography/nccu-photo-club/DSC_4786.jpeg",
+        "/photography/nccu-photo-club/DSC_4789.jpeg",
+        "/photography/nccu-photo-club/DSC_4803.JPG",
+        "/photography/nccu-photo-club/DSC_4811.jpeg",
+        "/photography/nccu-photo-club/DSC_4822.jpeg",
+        "/photography/nccu-photo-club/DSC_4829.jpeg",
+        "/photography/nccu-photo-club/DSC_4842.jpeg",
+        "/photography/nccu-photo-club/DSC_4851.jpeg",
+        "/photography/nccu-photo-club/DSC_4858.JPG",
+        "/photography/nccu-photo-club/DSC_4869.JPG",
+        "/photography/nccu-photo-club/DSC_4887.JPG",
+        "/photography/nccu-photo-club/IMG_9004.JPG",
+        "/photography/nccu-photo-club/IMG_9025.JPG"
+      ],
+      "tags": ["政大", "摄影社", "八斗子", "猴硐", "风景", "海岸", "矿业遗产", "台湾"]
+    }
+  ]
 }
