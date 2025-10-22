@@ -2,7 +2,6 @@
 
 import { type Project } from '@/lib/schemas/photography';
 import { Eye } from 'lucide-react';
-import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useState } from 'react';
 import { PhotoGalleryDialog } from '../photo-gallery-dialog';
@@ -13,7 +12,6 @@ interface PhotographyProjectItemProps {
 
 export function PhotographyProjectItem({ project }: PhotographyProjectItemProps) {
   const [photoDialogOpen, setPhotoDialogOpen] = useState(false);
-  const t = useTranslations('photography');
 
   const hasPhotos = project.photos && project.photos.length > 0;
   
