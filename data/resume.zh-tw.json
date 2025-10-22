@@ -138,6 +138,15 @@
       ]
     },
     {
+      "name": "StreamBench Agent：大語言模型自學習（課程專案）",
+      "period": "2024 年 10 月 - 2024 年 12 月",
+      "technologies": [],
+      "outcomes": [
+        "基於 StreamBench 方法論（NeurIPS 2024）實現持續改進機制，構建系統性提示優化管道用於醫療診斷，透過臨床場景框架、結構化推理模板和負例學習策略，將準確率從 50.17% 提升至 73.64%。"
+      ],
+      "link": "https://docs.google.com/presentation/d/1sG7cwG52AIDTf736F6IjFEDEQ59vzbt_JJlNMMFRUVA/edit?slide=id.g2fc58600197_0_548#slide=id.g2fc58600197_0_548"
+    },
+    {
       "name": "一鍵穿搭：智慧服飾檢索系統（畢業專題）",
       "period": "2024 年 1 月 - 2025 年 1 月",
       "technologies": [
@@ -178,10 +187,16 @@
     },
     {
       "name": "SARS 社交廣告推薦系統（課程專案）",
-      "period": "",
-      "technologies": [],
+      "period": "2023 年 11 月 - 2024 年 1 月",
+      "technologies": [
+        "BERT",
+        "Python",
+        "NLP",
+        "圖演算法"
+      ],
       "outcomes": [
-        "文字探勘課程專案"
+        "採用基於 BERT 的模型，透過用戶評論間的餘弦相似度計算可信度。",
+        "使用 Dijkstra 演算法構建 k 深度用戶子圖，將評分、有用性和信任度整合到統一評分公式中，並透過回測優化參數。"
       ],
       "link": "/resume/SARS.pdf"
     },

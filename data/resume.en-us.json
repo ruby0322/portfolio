@@ -138,6 +138,15 @@
       ]
     },
     {
+      "name": "StreamBench Agent: Continuous Improvement of LLM (Course Project)",
+      "period": "Oct 2024 - Dec 2024",
+      "technologies": [],
+      "outcomes": [
+        "Implemented continuous improvement mechanisms following StreamBench methodology (NeurIPS 2024), engineering systematic prompt optimization pipeline for medical diagnosis that improved accuracy from 50.17% to 73.64% through clinical scenario framing, structured reasoning templates, and negative example learning strategies."
+      ],
+      "link": "https://docs.google.com/presentation/d/1sG7cwG52AIDTf736F6IjFEDEQ59vzbt_JJlNMMFRUVA/edit?slide=id.g2fc58600197_0_548#slide=id.g2fc58600197_0_548"
+    },
+    {
       "name": "One-Click Outfit: Smart Apparel Retrieval System (Bachelor Project)",
       "period": "Jan 2024 - Jan 2025",
       "technologies": [
@@ -178,10 +187,16 @@
     },
     {
       "name": "SARS: Social Advertising Recommendation System (Course Project)",
-      "period": "",
-      "technologies": [],
+      "period": "Nov 2023 - Jan 2024",
+      "technologies": [
+        "BERT",
+        "Python",
+        "NLP",
+        "Graph Algorithms"
+      ],
       "outcomes": [
-        "Text mining course project"
+        "Employed a BERT-based model to compute trustworthiness via cosine similarity between user comments.",
+        "Constructed k-deep user subgraphs with Dijkstra's algorithm and integrated ratings, helpfulness, and trust into a unified scoring formula, then optimized parameters through backtesting."
       ],
       "link": "/resume/SARS.pdf"
     },

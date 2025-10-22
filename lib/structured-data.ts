@@ -10,7 +10,7 @@ export function getPersonSchema() {
     name: '顧寬証',
     alternateName: ['James Ku', 'Kuan-Cheng Ku', 'Ruby'],
     url: siteConfig.url,
-    image: `${siteConfig.url}/opengraph-image.png`,
+    image: `${siteConfig.url}/logo.png`,
     email: siteConfig.email,
     telephone: siteConfig.phone,
     address: {
@@ -159,7 +159,7 @@ export function getOrganizationSchema() {
     '@type': 'Organization',
     name: '顧寬証 James Ku',
     url: siteConfig.url,
-    logo: `${siteConfig.url}/opengraph-image.png`,
+    logo: `${siteConfig.url}/logo.png`,
     description: siteConfig.description,
     email: siteConfig.email,
     telephone: siteConfig.phone,
@@ -323,7 +323,7 @@ export function getArticleSchema(article: {
     '@type': 'Article',
     headline: article.title,
     description: article.description,
-    image: article.image || `${siteConfig.url}/opengraph-image.png`,
+    image: article.image || `${siteConfig.url}/logo.png`,
     datePublished: article.datePublished,
     dateModified: article.dateModified || article.datePublished,
     author: {

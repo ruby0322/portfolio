@@ -140,6 +140,15 @@
       ]
     },
     {
+      "name": "StreamBench Agent：大语言模型自学习（课程项目）",
+      "period": "2024 年 10 月 - 2024 年 12 月",
+      "technologies": [],
+      "outcomes": [
+        "基于 StreamBench 方法论（NeurIPS 2024）实现持续改进机制，构建系统性提示优化管道用于医疗诊断，通过临床场景框架、结构化推理模板和负例学习策略，将准确率从 50.17% 提升至 73.64%。"
+      ],
+      "link": "https://docs.google.com/presentation/d/1sG7cwG52AIDTf736F6IjFEDEQ59vzbt_JJlNMMFRUVA/edit?slide=id.g2fc58600197_0_548#slide=id.g2fc58600197_0_548"
+    },
+    {
       "name": "一键穿搭：智慧服饰检索系统（毕业专题）",
       "period": "2024 年 1 月 - 2025 年 1 月",
       "technologies": [
@@ -180,10 +189,16 @@
     },
     {
       "name": "SARS 社交广告推荐系统（课程项目）",
-      "period": "",
-      "technologies": [],
+      "period": "2023 年 11 月 - 2024 年 1 月",
+      "technologies": [
+        "BERT",
+        "Python",
+        "NLP",
+        "图算法"
+      ],
       "outcomes": [
-        "文本挖掘课程项目"
+        "采用基于 BERT 的模型，通过用户评论间的余弦相似度计算可信度。",
+        "使用 Dijkstra 算法构建 k 深度用户子图，将评分、有用性和信任度整合到统一评分公式中，并通过回测优化参数。"
       ],
       "link": "/resume/SARS.pdf"
     },

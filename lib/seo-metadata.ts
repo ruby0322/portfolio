@@ -50,7 +50,7 @@ export function generatePageMetadata({
   keywords,
   path = '',
   locale = 'zh-TW',
-  image = '/opengraph-image.png',
+  image = '/logo.png',
   type = 'website',
 }: PageMetadataConfig): Metadata {
   const isEnglish = locale === 'en-US';
