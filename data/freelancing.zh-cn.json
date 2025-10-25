@@ -1,0 +1,18 @@
+{
+  "metrics": [
+    {
+      "value": "300+",
+      "labelKey": "mau"
+    },
+    {
+      "value": "5+",
+      "labelKey": "projects"
+    },
+    {
+      "value": "2",
+      "labelKey": "clients",
+      "subtext": "中兴大学、台大艺术季"
+    }
+  ],
+  "facebookDisplayName": "顧寬証"
+}

@@ -2,6 +2,7 @@
   "nav": {
     "resume": "专业简历",
     "photography": "摄影",
+    "freelancing": "软件接案",
     "services": "服务",
     "transcribe": "语音转文字",
     "menu": "菜单",
@@ -81,5 +82,91 @@
     "chunkErrors": "部分区块转录失败：",
     "chunkError": "区块 {index}：{error}",
     "invalidFile": "请拖放有效的视频或音频文件"
+  },
+  "freelancing": {
+    "hero": {
+      "title": "软件开发接案",
+      "subtitle": "将您的想法化为现实",
+      "description": "提供可扩展、专业的全栈解决方案，量身打造符合您的商业需求",
+      "cta": "开始您的项目",
+      "ctaSecondary": "查看作品集",
+      "metricsLabels": {
+        "mau": "服务月活跃用户数",
+        "projects": "已交付项目",
+        "clients": "重要客户"
+      }
+    },
+    "caseStudies": {
+      "title": "案例研究",
+      "subtitle": "真实项目，实际成果",
+      "viewDetails": "查看详情",
+      "technologies": "使用技术",
+      "outcomes": "主要成果",
+      "visit": "前往项目",
+      "showMore": "显示更多 {count} 项",
+      "showLess": "显示较少"
+    },
+    "techStack": {
+      "title": "技术堆栈",
+      "subtitle": "采用现代化、业界领先的技术",
+      "categories": {
+        "frontend": "前端",
+        "backend": "后端",
+        "database": "数据库与存储",
+        "cloud": "云端与 DevOps",
+        "ai": "人工智能与机器学习"
+      }
+    },
+    "process": {
+      "title": "开发流程",
+      "subtitle": "透明、协作的方式，确保您的愿景成为现实",
+      "steps": {
+        "consultation": {
+          "title": "初步咨询",
+          "description": "讨论您的项目目标、需求和时程。我会提供技术见解和可行性分析，确保我们目标一致。"
+        },
+        "proposal": {
+          "title": "提案与规划",
+          "description": "提供详细提案，包含系统架构、技术堆栈、时程和报价。我们会一起调整计划，直到您完全放心。"
+        },
+        "development": {
+          "title": "迭代式开发",
+          "description": "采用敏捷开发，定期提供进度报告。您会及早且频繁地看到可运作的原型，在每个阶段都有机会给予反馈。"
+        },
+        "testing": {
+          "title": "测试与精进",
+          "description": "全面测试确保质量和性能。我们会收集您的反馈并进行调整，完善最终交付成果。"
+        },
+        "deployment": {
+          "title": "部署与培训",
+          "description": "顺利部署到正式环境，提供文档和训练。我会确保您的团队能够熟悉系统操作。"
+        },
+        "support": {
+          "title": "持续支持",
+          "description": "提供持续维护和技术支持。我会协助您的产品随着业务需求成长与演进。"
+        }
+      }
+    },
+    "contact": {
+      "title": "让我们一起打造卓越产品",
+      "subtitle": "准备开始您的项目了吗？与我联系，让我们讨论如何实现您的愿景。",
+      "email": "发邮件给我",
+      "facebook": "Facebook 消息",
+      "mobile": "电话联系",
+      "availability": "目前接受新项目委托",
+      "responseTime": "一般回复时间：24 小时内",
+      "whatToInclude": "消息中请包含：",
+      "whatToIncludeItems": {
+        "overview": "项目概述与目标",
+        "timeline": "时程与预算期望",
+        "requirements": "任何特定的技术需求"
+      },
+      "whatHappensNext": "接下来的流程：",
+      "whatHappensNextItems": {
+        "consultation": "初步咨询通话",
+        "proposal": "详细提案与时程",
+        "kickoff": "项目启动与开发"
+      }
+    }
   }
 }

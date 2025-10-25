@@ -10,7 +10,7 @@
       "github": "https://github.com/ruby0322",
       "linkedin": "https://www.linkedin.com/in/%E5%AF%AC%E8%A8%BC-%E9%A1%A7-a9b282214/",
       "website": "",
-      "portfolio": "/James-Resume-20251021.pdf",
+      "portfolio": "/James-Resume-20251022.pdf",
       "facebook": "https://www.facebook.com/ruby.ku.0322/",
       "instagram": "https://www.instagram.com/ruby.0322/"
     }
@@ -118,7 +118,8 @@
   ],
   "projects": [
     {
-      "name": "興大學伴酷系統（個人接案）",
+      "id": "nchu-tutoring-dashboard",
+      "name": "興大學伴酷系統",
       "period": "2025 年 4 月 - 2025 年 9 月",
       "technologies": [
         "Next.js",
@@ -138,7 +139,8 @@
       ]
     },
     {
-      "name": "StreamBench Agent：大語言模型自學習（課程專案）",
+      "id": "streambench-agent",
+      "name": "StreamBench Agent：大語言模型自學習",
       "period": "2024 年 10 月 - 2024 年 12 月",
       "technologies": [],
       "outcomes": [
@@ -147,7 +149,8 @@
       "link": "https://docs.google.com/presentation/d/1sG7cwG52AIDTf736F6IjFEDEQ59vzbt_JJlNMMFRUVA/edit?slide=id.g2fc58600197_0_548#slide=id.g2fc58600197_0_548"
     },
     {
-      "name": "一鍵穿搭：智慧服飾檢索系統（畢業專題）",
+      "id": "oneclick-outfit",
+      "name": "一鍵穿搭：智慧服飾檢索系統",
       "period": "2024 年 1 月 - 2025 年 1 月",
       "technologies": [
         "Next.js",
@@ -175,6 +178,7 @@
       ]
     },
     {
+      "id": "ntu-artfest-riddle-city",
       "name": "2024 台大藝術季城市尋寶網站",
       "period": "2024 年 1 月 - 2024 年 6 月",
       "technologies": [
@@ -183,10 +187,18 @@
       "outcomes": [
         "架構並主導開發線上城市尋寶遊戲網站，整合校園實體謎題，打造沉浸式體驗，為期一週的活動吸引超過 300 位活躍用戶。"
       ],
+      "photos": [
+        "/resume/ntuartfest/cover.png",
+        "/resume/ntuartfest/screenshot1.jpg",
+        "/resume/ntuartfest/screenshot2.jpg",
+        "/resume/ntuartfest/screenshot3.jpg",
+        "/resume/ntuartfest/screenshot4.jpg"
+      ],
       "link": "https://ntu-artfest-riddle-city-5teujs0ik-ntu-artfest-riddle-city-dev.vercel.app/"
     },
     {
-      "name": "SARS 社交廣告推薦系統（課程專案）",
+      "id": "sars",
+      "name": "SARS 社交廣告推薦系統",
       "period": "2023 年 11 月 - 2024 年 1 月",
       "technologies": [
         "BERT",
@@ -201,7 +213,8 @@
       "link": "/resume/SARS.pdf"
     },
     {
-      "name": "旭舊咖啡訂單及候位管理系統（課程專案）",
+      "id": "shijiou-cafe",
+      "name": "旭舊咖啡訂單及候位管理系統",
       "period": "2023 年 3 月 - 2023 年 5 月",
       "technologies": [
         "React.js",
@@ -212,7 +225,14 @@
       "outcomes": [
         "解決板橋復古咖啡廳的長時間等待及低效的人工排隊管理問題。"
       ],
-      "link": "/resume/資訊管理導論_第二組_期末專案書面報告.pdf"
+      "link": "/resume/資訊管理導論_第二組_期末專案書面報告.pdf",
+      "photos": [
+        "/resume/shijiou/22.png",
+        "/resume/shijiou/23.png",
+        "/resume/shijiou/24.png",
+        "/resume/shijiou/25.png",
+        "/resume/shijiou/26.png"
+      ]
     }
   ],
   "skills": [

@@ -2,6 +2,7 @@
   "nav": {
     "resume": "專業履歷",
     "photography": "攝影",
+    "freelancing": "軟體接案",
     "services": "服務",
     "transcribe": "語音轉文字",
     "menu": "選單",
@@ -81,5 +82,91 @@
     "chunkErrors": "部分區塊轉錄失敗：",
     "chunkError": "區塊 {index}：{error}",
     "invalidFile": "請拖放有效的影片或音訊檔案"
+  },
+  "freelancing": {
+    "hero": {
+      "title": "軟體開發接案",
+      "subtitle": "將您的想法化為現實",
+      "description": "提供可擴展、專業的全端解決方案，量身打造符合您的商業需求",
+      "cta": "開始您的專案",
+      "ctaSecondary": "查看作品集",
+      "metricsLabels": {
+        "mau": "服務月活躍用戶數",
+        "projects": "已交付專案",
+        "clients": "重要客戶"
+      }
+    },
+    "caseStudies": {
+      "title": "成功案例",
+      "subtitle": "真實專案，實際成果",
+      "viewDetails": "查看詳情",
+      "technologies": "使用技術",
+      "outcomes": "主要成果",
+      "visit": "前往專案",
+      "showMore": "顯示更多 {count} 項",
+      "showLess": "顯示較少"
+    },
+    "techStack": {
+      "title": "技術棧",
+      "subtitle": "採用現代化、業界領先的技術",
+      "categories": {
+        "frontend": "前端",
+        "backend": "後端",
+        "database": "資料庫與儲存",
+        "cloud": "雲端與 DevOps",
+        "ai": "人工智慧與機器學習"
+      }
+    },
+    "process": {
+      "title": "開發流程",
+      "subtitle": "透明、協作的方式，確保您的願景成為現實",
+      "steps": {
+        "consultation": {
+          "title": "初步諮詢",
+          "description": "討論您的專案目標、需求和時程。我會提供技術見解和可行性分析，確保我們目標一致。"
+        },
+        "proposal": {
+          "title": "提案與規劃",
+          "description": "提供詳細提案，包含系統架構、技術堆疊、時程和報價。我們會一起調整計畫，直到您完全放心。"
+        },
+        "development": {
+          "title": "迭代式開發",
+          "description": "採用敏捷開發，定期提供進度報告。您會及早且頻繁地看到可運作的原型，在每個階段都有機會給予回饋。"
+        },
+        "testing": {
+          "title": "測試與精進",
+          "description": "全面測試確保品質和效能。我們會蒐集您的反饋並進行調整，完善最終交付成果。"
+        },
+        "deployment": {
+          "title": "部署與培訓",
+          "description": "順利部署到正式環境，提供文件和訓練。我會確保您的團隊能夠熟悉系統操作。"
+        },
+        "support": {
+          "title": "持續支援",
+          "description": "提供持續維護和技術支援。我會協助您的產品隨著業務需求成長與演進。"
+        }
+      }
+    },
+    "contact": {
+      "title": "讓我們一起打造卓越產品",
+      "subtitle": "準備開始您的專案了嗎？與我聯繫，讓我們討論如何實現您的願景。",
+      "email": "寄信給我",
+      "facebook": "Facebook 訊息",
+      "mobile": "電話聯繫",
+      "availability": "目前接受新專案委託",
+      "responseTime": "一般回覆時間：24 小時內",
+      "whatToInclude": "訊息中請包含：",
+      "whatToIncludeItems": {
+        "overview": "專案概述與目標",
+        "timeline": "時程與預算期望",
+        "requirements": "任何特定的技術需求"
+      },
+      "whatHappensNext": "接下來的流程：",
+      "whatHappensNextItems": {
+        "consultation": "初步諮詢通話",
+        "proposal": "詳細提案與時程",
+        "kickoff": "專案啟動與開發"
+      }
+    }
   }
 }

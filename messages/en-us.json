@@ -2,6 +2,7 @@
   "nav": {
     "resume": "Professional Resume",
     "photography": "Photography",
+    "freelancing": "Software Freelancing",
     "services": "Services",
     "transcribe": "Transcribe",
     "menu": "Menu",
@@ -81,5 +82,91 @@
     "chunkErrors": "Some chunks failed to transcribe:",
     "chunkError": "Chunk {index}: {error}",
     "invalidFile": "Please drop a valid video or audio file"
+  },
+  "freelancing": {
+    "hero": {
+      "title": "Software Development Freelancing",
+      "subtitle": "Transform Your Ideas Into Reality",
+      "description": "Delivering scalable, professional full-stack solutions tailored to your business needs",
+      "cta": "Start Your Project",
+      "ctaSecondary": "View Portfolio",
+      "metricsLabels": {
+        "mau": "Monthly Active Users Served",
+        "projects": "Projects Delivered",
+        "clients": "Significant Clients"
+      }
+    },
+    "caseStudies": {
+      "title": "Successful Cases",
+      "subtitle": "Real Projects, Real Results",
+      "viewDetails": "View Details",
+      "technologies": "Technologies Used",
+      "outcomes": "Key Outcomes",
+      "visit": "Visit Project",
+      "showMore": "Show {count} more",
+      "showLess": "Show less"
+    },
+    "techStack": {
+      "title": "Technology Stack",
+      "subtitle": "Built with modern, industry-leading technologies",
+      "categories": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "database": "Database & Storage",
+        "cloud": "Cloud & DevOps",
+        "ai": "AI & ML"
+      }
+    },
+    "process": {
+      "title": "Development Process",
+      "subtitle": "Transparent, collaborative approach ensuring your vision becomes reality",
+      "steps": {
+        "consultation": {
+          "title": "Initial Consultation",
+          "description": "We discuss your project goals, requirements, and timeline. I'll provide technical insights and feasibility analysis to ensure we're aligned."
+        },
+        "proposal": {
+          "title": "Proposal & Planning",
+          "description": "Receive a detailed proposal including system architecture, technology stack, timeline, and pricing. We'll refine the plan together until you're confident."
+        },
+        "development": {
+          "title": "Iterative Development",
+          "description": "Development happens in sprints with regular progress reports. You'll see working prototypes early and often, with opportunities for feedback at every stage."
+        },
+        "testing": {
+          "title": "Testing & Refinement",
+          "description": "Comprehensive testing ensures quality and performance. We'll gather your feedback and make refinements to perfect the deliverable."
+        },
+        "deployment": {
+          "title": "Deployment & Training",
+          "description": "Smooth deployment to production with documentation and training. I'll ensure your team is comfortable with the system."
+        },
+        "support": {
+          "title": "Ongoing Support",
+          "description": "Continuous maintenance and technical support available. I'm here to help your product grow and evolve with your business needs."
+        }
+      }
+    },
+    "contact": {
+      "title": "Let's Build Something Great Together",
+      "subtitle": "Ready to start your project? Get in touch and let's discuss how I can help bring your vision to life.",
+      "email": "Email Me",
+      "facebook": "Message on Facebook",
+      "mobile": "Call Me",
+      "availability": "Currently Available for Projects",
+      "responseTime": "Typical response time: 24 hours",
+      "whatToInclude": "What to Include in Your Message:",
+      "whatToIncludeItems": {
+        "overview": "Project overview and goals",
+        "timeline": "Timeline and budget expectations",
+        "requirements": "Any specific technical requirements"
+      },
+      "whatHappensNext": "What Happens Next:",
+      "whatHappensNextItems": {
+        "consultation": "Initial consultation call",
+        "proposal": "Detailed proposal with timeline",
+        "kickoff": "Project kickoff and development"
+      }
+    }
   }
 }
