@@ -85,11 +85,11 @@
   },
   "freelancing": {
     "hero": {
-      "title": "軟體開發接案",
+      "title": "儒幣匠軟體開發工作室",
       "subtitle": "將您的想法化為現實",
       "description": "提供可擴展、專業的全端解決方案，量身打造符合您的商業需求",
       "cta": "開始您的專案",
-      "ctaSecondary": "查看作品集",
+      "ctaSecondary": "查看成功案例",
       "metricsLabels": {
         "mau": "服務月活躍用戶數",
         "projects": "已交付專案",
@@ -167,6 +167,10 @@
         "proposal": "詳細提案與時程",
         "kickoff": "專案啟動與開發"
       }
+    },
+    "services": {
+      "title": "提供服務",
+      "subtitle": "專業的軟體開發服務，滿足您的各種需求"
     }
   }
 }

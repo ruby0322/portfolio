@@ -3,6 +3,7 @@ import { CaseStudiesSection } from '@/components/portfolio/freelancing/case-stud
 import { ContactCTA } from '@/components/portfolio/freelancing/contact-cta';
 import { FreelancingHero } from '@/components/portfolio/freelancing/freelancing-hero';
 import { ProcessSection } from '@/components/portfolio/freelancing/process-section';
+import { ServicesSection } from '@/components/portfolio/freelancing/services-section';
 import { TechStackSection } from '@/components/portfolio/freelancing/tech-stack';
 import { Header } from '@/components/portfolio/header';
 import { type Locale } from '@/i18n';
@@ -49,6 +50,7 @@ export default async function FreelancingPage({
       <main className="flex-1 pt-[73px]">
         <FreelancingHero metrics={freelancingData.metrics} />
         <CaseStudiesSection projects={resumeData.projects || []} />
+        {freelancingData.services && <ServicesSection services={freelancingData.services} />}
         <TechStackSection />
         <ProcessSection />
         <ContactCTA resumeData={resumeData} facebookDisplayName={freelancingData.facebookDisplayName} />

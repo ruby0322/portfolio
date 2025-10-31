@@ -14,5 +14,27 @@
       "subtext": "NCHU, NTU ArtFest"
     }
   ],
-  "facebookDisplayName": "James Ku"
+  "facebookDisplayName": "James Ku",
+  "services": [
+    {
+      "id": "cms",
+      "name": "CMS",
+      "description": "Content Management System development for easy website content management"
+    },
+    {
+      "id": "mis",
+      "name": "MIS",
+      "description": "Management Information System development for digital transformation"
+    },
+    {
+      "id": "corporate-website",
+      "name": "Corporate & Personal Website",
+      "description": "Corporate and personal branding website design and development to showcase brand identity and personal style"
+    },
+    {
+      "id": "web-prototype",
+      "name": "Web Product Prototype",
+      "description": "Web product prototype design and development for rapid concept validation"
+    }
+  ]
 }

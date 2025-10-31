@@ -41,7 +41,7 @@ export function CaseStudiesSection({ projects }: CaseStudiesProps) {
         onOpenChange={setGalleryOpen}
         initialIndex={initialPhotoIndex}
       />
-      <section id="case-studies" className="py-20 px-6 bg-muted/30">
+      <section id="case-studies" className="py-20 px-6 bg-background">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">

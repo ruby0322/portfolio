@@ -14,5 +14,27 @@
       "subtext": "中兴大学、台大艺术季"
     }
   ],
-  "facebookDisplayName": "顧寬証"
+  "facebookDisplayName": "顧寬証",
+  "services": [
+    {
+      "id": "cms",
+      "name": "CMS",
+      "description": "内容管理系统开发，让您轻松管理网站内容"
+    },
+    {
+      "id": "mis",
+      "name": "MIS",
+      "description": "管理信息系统开发，协助企业数位化管理"
+    },
+    {
+      "id": "corporate-website",
+      "name": "形象网站",
+      "description": "企业及个人形象网站设计与开发，展现品牌特色与个人风格"
+    },
+    {
+      "id": "web-prototype",
+      "name": "网页产品原型",
+      "description": "网页产品原型设计与开发，快速验证产品概念"
+    }
+  ]
 }

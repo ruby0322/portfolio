@@ -85,7 +85,7 @@
   },
   "freelancing": {
     "hero": {
-      "title": "Software Development Freelancing",
+      "title": "RubyTech Software Development Studio",
       "subtitle": "Transform Your Ideas Into Reality",
       "description": "Delivering scalable, professional full-stack solutions tailored to your business needs",
       "cta": "Start Your Project",
@@ -167,6 +167,10 @@
         "proposal": "Detailed proposal with timeline",
         "kickoff": "Project kickoff and development"
       }
+    },
+    "services": {
+      "title": "Services Offered",
+      "subtitle": "Professional software development services to meet your various needs"
     }
   }
 }

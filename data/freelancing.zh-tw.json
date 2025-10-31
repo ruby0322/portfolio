@@ -14,5 +14,27 @@
       "subtext": "中興大學、臺大藝術季"
     }
   ],
-  "facebookDisplayName": "顧寬証"
+  "facebookDisplayName": "顧寬証",
+  "services": [
+    {
+      "id": "cms",
+      "name": "CMS",
+      "description": "內容管理系統開發，讓您輕鬆管理網站內容"
+    },
+    {
+      "id": "mis",
+      "name": "MIS",
+      "description": "管理資訊系統開發，協助企業數位化管理"
+    },
+    {
+      "id": "corporate-website",
+      "name": "形象網站",
+      "description": "企業及個人形象網站設計與開發，展現品牌特色與個人風格"
+    },
+    {
+      "id": "web-prototype",
+      "name": "網頁產品原型",
+      "description": "網頁產品原型設計與開發，快速驗證產品概念"
+    }
+  ]
 }
