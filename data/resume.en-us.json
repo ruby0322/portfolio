@@ -54,7 +54,8 @@
       "company": "Microsoft TSMC OnePlatform Team, ISD",
       "period": "Apr 2025 - Present",
       "outcomes": [
-        "As an R&D Intern @ ISD TSMC OnePlatform team, I was entrusted to lead the testing strategy and execution for a multi-partner software project. Collaborating with ASUS, Advantech, and Microsoft, I've been driving the project toward successful delivery and acceptance."
+        "Led unit and end-to-end testing initiatives by creating and executing comprehensive test plans covering 400+ test cases, while designing and hosting product training sessions for key users.",
+        "Opened and assisted in resolving 150+ Azure DevOps bugs, implemented POC experiments for frontend issues, and organized interlock meetings between Microsoft, ASUS, and Advantech to align cross-vendor engineers."
       ],
       "photos": [
         "/resume/microsoft-internship-certificate.png"
