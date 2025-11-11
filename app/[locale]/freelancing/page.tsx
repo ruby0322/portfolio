@@ -8,6 +8,7 @@ import { TechStackSection } from '@/components/portfolio/freelancing/tech-stack'
 import { Header } from '@/components/portfolio/header';
 import { type Locale } from '@/i18n';
 import { getFreelancingData, getResumeData } from '@/lib/data';
+import { getFreelancingMetadata } from '@/lib/seo-metadata';
 import { Metadata } from 'next';
 
 export async function generateMetadata({
@@ -16,23 +17,14 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-
-  const titles = {
-    'en-us': 'Software Development Freelancing | Kuan-Cheng Ku',
-    'zh-tw': '軟體開發接案 | 顧寬証',
-    'zh-cn': '软件开发接案 | 顾宽证',
+  
+  const localeMap: Record<string, 'zh-TW' | 'zh-CN' | 'en-US'> = {
+    'zh-tw': 'zh-TW',
+    'zh-cn': 'zh-CN',
+    'en-us': 'en-US',
   };
-
-  const descriptions = {
-    'en-us': 'Professional full-stack software development services. From concept to deployment, delivering scalable solutions for your business.',
-    'zh-tw': '專業全端軟體開發服務。從概念到部署，為您的業務提供可擴展的解決方案。',
-    'zh-cn': '专业全栈软件开发服务。从概念到部署，为您的业务提供可扩展的解决方案。',
-  };
-
-  return {
-    title: titles[locale as keyof typeof titles] || titles['en-us'],
-    description: descriptions[locale as keyof typeof descriptions] || descriptions['en-us'],
-  };
+  
+  return getFreelancingMetadata(localeMap[locale] || 'zh-TW');
 }
 
 export default async function FreelancingPage({

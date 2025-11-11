@@ -51,6 +51,58 @@ export const seoKeywords = {
       'Freelance Developer',
       '獨立開發者',
     ],
+    // 接案與自由開發專用關鍵字
+    freelancing: {
+      // 主關鍵字
+      primary: [
+        '網頁開發接案',
+        '網站設計接案',
+        '網頁設計外包',
+        '台灣網頁接案團隊',
+        '自由接案工程師',
+        '網站客製化開發',
+        '公司網站設計',
+        '台大接案團隊',
+        'Next.js 接案',
+        'React 接案',
+        'Supabase 開發服務',
+        'Web App 開發團隊',
+        'SaaS 網頁開發',
+        'Startup 網頁開發',
+        'Web development freelance Taiwan',
+        'Taiwan web developer team',
+      ],
+      // 長尾關鍵字
+      longTail: [
+        '接案做網站推薦',
+        '公司網站設計費用',
+        '網頁設計報價 2025',
+        '小型企業網站製作',
+        '學生團隊接案',
+        '登入系統開發',
+        'CMS 系統開發',
+        'MIS 系統開發',
+        'Web App 登入會員功能',
+        '前後端整合開發',
+        '台灣全端開發團隊',
+        '台大學生接案',
+        '台大工程師團隊',
+        '台灣大學生自由接案',
+        '實習生開發團隊',
+        '年輕開發者團隊',
+        'Next.js 專案開發',
+        'React 登入系統',
+        'Tailwind CSS 網頁設計',
+        'Supabase 資料庫服務',
+        'Firebase 後端整合',
+        'Vercel 網站部署',
+        '台北接案團隊',
+        '台灣接案網站',
+        '台灣網站設計',
+        'Web developer Taiwan',
+        'Freelance web team Taipei',
+      ],
+    },
     skills: [
       'Next.js 開發',
       'React 開發',
@@ -265,7 +317,7 @@ export const seoKeywords = {
 /**
  * 為不同頁面生成對應的關鍵字組合
  */
-export function getPageKeywords(page: 'home' | 'services' | 'photography'): string[] {
+export function getPageKeywords(page: 'home' | 'services' | 'photography' | 'freelancing'): string[] {
   const baseKeywords = [
     ...seoKeywords.personal.names,
     ...seoKeywords.personal.identity.slice(0, 3),
@@ -297,6 +349,16 @@ export function getPageKeywords(page: 'home' | 'services' | 'photography'): stri
         ...seoKeywords.photography.roles,
         ...seoKeywords.photography.projects,
         ...seoKeywords.photography.style,
+      ];
+    
+    case 'freelancing':
+      return [
+        ...baseKeywords,
+        ...seoKeywords.software.freelancing.primary,
+        ...seoKeywords.software.freelancing.longTail,
+        ...seoKeywords.software.skills.slice(0, 8),
+        ...seoKeywords.achievements.awards.slice(0, 2),
+        ...seoKeywords.location.slice(0, 4),
       ];
     
     default:

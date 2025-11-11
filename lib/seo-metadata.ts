@@ -220,3 +220,43 @@ export function getPhotographyMetadata(locale: 'zh-TW' | 'zh-CN' | 'en-US'): Met
   });
 }
 
+/**
+ * 接案頁面 Metadata
+ * 使用 messages 檔案中的標題，並針對接案服務進行 SEO 優化
+ */
+export async function getFreelancingMetadata(locale: 'zh-TW' | 'zh-CN' | 'en-US'): Promise<Metadata> {
+  const localeMap = {
+    'zh-TW': 'zh-tw',
+    'zh-CN': 'zh-cn',
+    'en-US': 'en-us',
+  };
+
+  // 動態載入 messages
+  const messages = (await import(`../messages/${localeMap[locale]}.json`)).default;
+  const freelancingTitle = messages.freelancing?.hero?.title || messages.nav?.freelancing || 'Freelancing';
+  
+  // 根據 SEO 建議的標題格式：台大接案團隊｜網站設計、Next.js 開發、Supabase 架站服務 - RubyTech
+  const titles = {
+    'zh-TW': `台大接案團隊｜網站設計、Next.js 開發、Supabase 架站服務 - ${freelancingTitle}`,
+    'zh-CN': `台大接案团队｜网站设计、Next.js 开发、Supabase 架站服务 - ${freelancingTitle}`,
+    'en-US': `Taiwan Web Development Team | Website Design, Next.js & Supabase Development Services - ${freelancingTitle}`,
+  };
+
+  // SEO 優化的描述，包含關鍵字
+  const descriptions = {
+    'zh-TW': '由台大背景團隊組成的 RubyTech 提供網站設計、全端開發與 SaaS 架構服務。採用 Next.js、React、Supabase 等現代技術，協助企業快速打造數位產品。專業網頁開發接案、網站設計外包、Web App 開發團隊。',
+    'zh-CN': '由台大背景团队组成的 RubyTech 提供网站设计、全栈开发与 SaaS 架构服务。采用 Next.js、React、Supabase 等现代技术，协助企业快速打造数字产品。专业网页开发接案、网站设计外包、Web App 开发团队。',
+    'en-US': 'RubyTech by NTU background team provides website design, full-stack development, and SaaS architecture services. Using modern technologies like Next.js, React, and Supabase to help businesses rapidly build digital products. Professional web development freelancing, website design outsourcing, Web App development team.',
+  };
+
+  return generatePageMetadata({
+    title: titles[locale],
+    titleEn: titles['en-US'],
+    description: descriptions[locale],
+    descriptionEn: descriptions['en-US'],
+    keywords: getPageKeywords('freelancing'),
+    path: `/${localeMap[locale]}/freelancing`,
+    locale: locale,
+  });
+}
+
