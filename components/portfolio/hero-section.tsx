@@ -173,7 +173,7 @@ export function HeroSection({ info, summary }: HeroSectionProps) {
                   className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <Download className="w-5 h-5" />
-                  <span>Resume</span>
+                  <span>CV</span>
                 </a>
               )}
             </motion.div>
