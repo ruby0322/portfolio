@@ -1,0 +1,212 @@
+{
+  "services": [
+    {
+      "id": "freelancing",
+      "title": {
+        "en-us": "Software Development Freelancing",
+        "zh-tw": "軟體專案接案",
+        "zh-cn": "软件项目接案"
+      },
+      "shortDescription": {
+        "en-us": "Customized software development to meet your needs",
+        "zh-tw": "客製化軟體開發，滿足您的需求",
+        "zh-cn": "客制化软件开发，满足您的需求"
+      },
+      "longDescription": {
+        "en-us": "Providing comprehensive software development services from requirements analysis, system design to development and deployment. Experienced in building scalable full-stack applications that serve 300+ monthly active users.",
+        "zh-tw": "提供從需求分析、系統設計到開發部署的完整軟體開發服務。擅長打造可擴展的全端應用，曾服務超過 300 位月活躍用戶的系統。",
+        "zh-cn": "提供从需求分析、系统设计到开发部署的完整软件开发服务。擅长打造可扩展的全端应用，曾服务超过 300 位月活跃用户的系统。"
+      },
+      "icon": "code",
+      "features": {
+        "en-us": [
+          "Full-stack web application development",
+          "System architecture design",
+          "Database design and optimization",
+          "Cloud deployment (Cloudflare, Vercel)",
+          "Continuous maintenance and technical support"
+        ],
+        "zh-tw": [
+          "全端網頁應用開發",
+          "系統架構設計",
+          "資料庫設計與優化",
+          "雲端部署 (Cloudflare, Vercel)",
+          "持續維護與技術支援"
+        ],
+        "zh-cn": [
+          "全端网页应用开发",
+          "系统架构设计",
+          "数据库设计与优化",
+          "云端部署 (Cloudflare, Vercel)",
+          "持续维护与技术支持"
+        ]
+      },
+      "technologies": {
+        "en-us": ["Next.js", "React", "TypeScript", "PostgreSQL", "Supabase", "Docker"],
+        "zh-tw": ["Next.js", "React", "TypeScript", "PostgreSQL", "Supabase", "Docker"],
+        "zh-cn": ["Next.js", "React", "TypeScript", "PostgreSQL", "Supabase", "Docker"]
+      },
+      "priceRange": {
+        "en-us": "Quote based on project scope",
+        "zh-tw": "依專案規模報價",
+        "zh-cn": "依项目规模报价"
+      },
+      "availability": {
+        "en-us": "Available",
+        "zh-tw": "接案中",
+        "zh-cn": "接案中"
+      },
+      "contactInfo": {
+        "email": "ruby0322@ntu.im",
+        "facebook": "https://www.facebook.com/ruby0322.lin",
+        "preferredContact": "email"
+      }
+    },
+    {
+      "id": "tutoring",
+      "title": {
+        "en-us": "Programming Tutoring",
+        "zh-tw": "程式教學",
+        "zh-cn": "编程教学"
+      },
+      "shortDescription": {
+        "en-us": "One-on-one programming tutoring and mentorship",
+        "zh-tw": "一對一程式教學與指導",
+        "zh-cn": "一对一编程教学与指导"
+      },
+      "longDescription": {
+        "en-us": "Extensive teaching experience as a teaching assistant for multiple courses at NTU, having guided over 500 students. Offering customized curriculum from basic programming languages to advanced development techniques.",
+        "zh-tw": "擁有豐富教學經驗，曾擔任台大多門課程助教，指導超過 500 位學生。提供客製化教學內容，從基礎程式語言到進階開發技巧。",
+        "zh-cn": "拥有丰富教学经验，曾担任台大多门课程助教，指导超过 500 位学生。提供客制化教学内容，从基础程序语言到进阶开发技巧。"
+      },
+      "icon": "graduation-cap",
+      "features": {
+        "en-us": [
+          "One-on-one online tutoring",
+          "Customized curriculum",
+          "Project-based learning guidance",
+          "Interview preparation and resume optimization",
+          "Vibe coding coaching",
+          "English tutoring"
+        ],
+        "zh-tw": [
+          "一對一線上教學",
+          "客製化課程內容",
+          "實作專案指導",
+          "面試準備與履歷優化",
+          "Vibe coding 指導"
+        ],
+        "zh-cn": [
+          "一对一在线教学",
+          "客制化课程内容",
+          "实作项目指导",
+          "面试准备与简历优化",
+          "Vibe coding 指导"
+        ]
+      },
+      "technologies": {
+        "en-us": [
+          "Python",
+          "C/C++",
+          "JavaScript/TypeScript",
+          "Data Structures & Algorithms",
+          "Web Development",
+          "Deep Learning"
+        ],
+        "zh-tw": [
+          "Python",
+          "C/C++",
+          "JavaScript/TypeScript",
+          "資料結構與演算法",
+          "網頁開發",
+          "深度學習"
+        ],
+        "zh-cn": [
+          "Python",
+          "C/C++",
+          "JavaScript/TypeScript",
+          "数据结构与算法",
+          "网页开发",
+          "深度学习"
+        ]
+      },
+      "priceRange": {
+        "en-us": "40+USD/h",
+        "zh-tw": "時薪 NT$ 1000 起",
+        "zh-cn": "时薪新台币 1000 元起"
+      },
+      "availability": {
+        "en-us": "Available",
+        "zh-tw": "接案中",
+        "zh-cn": "接案中"
+      },
+      "contactInfo": {
+        "email": "ruby0322@ntu.im",
+        "facebook": "https://www.facebook.com/ruby.ku.0322/",
+        "preferredContact": "facebook"
+      }
+    },
+    {
+      "id": "fulltime",
+      "title": {
+        "en-us": "Open to Full-time Opportunities",
+        "zh-tw": "開放全職工作機會",
+        "zh-cn": "开放全职工作机会"
+      },
+      "shortDescription": {
+        "en-us": "Actively seeking full-time software engineer positions",
+        "zh-tw": "積極尋求全職軟體工程師職位",
+        "zh-cn": "积极寻求全职软件工程师职位"
+      },
+      "longDescription": {
+        "en-us": "Passionate about software development with internship and multiple project experiences. Skilled in full-stack development and AI applications, looking forward to joining innovative teams to build quality products.",
+        "zh-tw": "對軟體開發充滿熱情，擁有實習與多個專案經驗。擅長全端開發與 AI 應用，期待加入創新團隊，共同打造優質產品。",
+        "zh-cn": "对软件开发充满热情，拥有实习与多个项目经验。擅长全端开发与 AI 应用，期待加入创新团队，共同打造优质产品。"
+      },
+      "icon": "briefcase",
+      "features": {
+        "en-us": [
+          "Full-stack development experience",
+          "AI application development",
+          "System architecture design",
+          "Team collaboration and leadership",
+          "Fast learning ability"
+        ],
+        "zh-tw": [
+          "全端開發經驗",
+          "AI 應用開發",
+          "系統架構設計",
+          "團隊協作與領導",
+          "快速學習能力"
+        ],
+        "zh-cn": [
+          "全端开发经验",
+          "AI 应用开发",
+          "系统架构设计",
+          "团队协作与领导",
+          "快速学习能力"
+        ]
+      },
+      "technologies": {
+        "en-us": ["Next.js", "React", "TypeScript", "Python", "Docker", "GCP", "PostgreSQL"],
+        "zh-tw": ["Next.js", "React", "TypeScript", "Python", "Docker", "GCP", "PostgreSQL"],
+        "zh-cn": ["Next.js", "React", "TypeScript", "Python", "Docker", "GCP", "PostgreSQL"]
+      },
+      "priceRange": {
+        "en-us": "Negotiable",
+        "zh-tw": "面議",
+        "zh-cn": "面议"
+      },
+      "availability": {
+        "en-us": "From July 2025",
+        "zh-tw": "2026 年 6 月起",
+        "zh-cn": "2025 年 7 月起"
+      },
+      "contactInfo": {
+        "email": "ruby0322@ntu.im",
+        "linkedin": "https://www.linkedin.com/in/%E5%AF%AC%E8%A8%BC-%E9%A1%A7-a9b282214/",
+        "preferredContact": "email"
+      }
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "metrics": [
+    {
+      "value": "300+",
+      "labelKey": "mau"
+    },
+    {
+      "value": "5+",
+      "labelKey": "projects"
+    },
+    {
+      "value": "2",
+      "labelKey": "clients",
+      "subtext": {
+        "en-us": "NCHU, NTU ArtFest",
+        "zh-tw": "中興大學、臺大藝術季",
+        "zh-cn": "中兴大学、台大艺术季"
+      }
+    }
+  ],
+  "facebookDisplayName": {
+    "en-us": "James Ku",
+    "zh-tw": "顧寬証",
+    "zh-cn": "顧寬証"
+  },
+  "services": [
+    {
+      "id": "cms",
+      "name": {
+        "en-us": "CMS",
+        "zh-tw": "CMS",
+        "zh-cn": "CMS"
+      },
+      "description": {
+        "en-us": "Content Management System development for easy website content management",
+        "zh-tw": "內容管理系統開發，讓您輕鬆管理網站內容",
+        "zh-cn": "内容管理系统开发，让您轻松管理网站内容"
+      }
+    },
+    {
+      "id": "mis",
+      "name": {
+        "en-us": "MIS",
+        "zh-tw": "MIS",
+        "zh-cn": "MIS"
+      },
+      "description": {
+        "en-us": "Management Information System development for digital transformation",
+        "zh-tw": "管理資訊系統開發，協助企業數位化管理",
+        "zh-cn": "管理信息系统开发，协助企业数位化管理"
+      }
+    },
+    {
+      "id": "corporate-website",
+      "name": {
+        "en-us": "Corporate & Personal Website",
+        "zh-tw": "形象網站",
+        "zh-cn": "形象网站"
+      },
+      "description": {
+        "en-us": "Corporate and personal branding website design and development to showcase brand identity and personal style",
+        "zh-tw": "企業及個人形象網站設計與開發，展現品牌特色與個人風格",
+        "zh-cn": "企业及个人形象网站设计与开发，展现品牌特色与个人风格"
+      }
+    },
+    {
+      "id": "web-prototype",
+      "name": {
+        "en-us": "Web Product Prototype",
+        "zh-tw": "網頁產品原型",
+        "zh-cn": "网页产品原型"
+      },
+      "description": {
+        "en-us": "Web product prototype design and development for rapid concept validation",
+        "zh-tw": "網頁產品原型設計與開發，快速驗證產品概念",
+        "zh-cn": "网页产品原型设计与开发，快速验证产品概念"
+      }
+    }
+  ]
+}
