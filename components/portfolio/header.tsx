@@ -45,7 +45,7 @@ export function Header() {
   const navigationLinks = [
     { href: `/${locale}`, label: t('resume') },
     { href: `/${locale}/photography`, label: t('photography') },
-    { href: `/${locale}/freelancing`, label: t('freelancing') },
+    // { href: `/${locale}/freelancing`, label: t('freelancing') },
     // { href: `/${locale}/services`, label: t('services') },
     // { href: `/${locale}/transcribe`, label: t('transcribe') },
   ];

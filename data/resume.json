@@ -2,8 +2,8 @@
   "personalInfo": {
     "name": {
       "en-us": "Kuan-Cheng (James) Ku",
-      "zh-tw": "顧寬証（James）",
-      "zh-cn": "顾宽証 （James）"
+      "zh-tw": "顧寬証 James",
+      "zh-cn": "顾宽証 James"
     },
     "title": {
       "en-us": "",
@@ -13,9 +13,9 @@
     "email": "ruby0322@ntu.im",
     "phone": "0983-588-092",
     "location": {
-      "en-us": "Taipei / New Taipei City, Taiwan",
-      "zh-tw": "台灣，台北市／新北市",
-      "zh-cn": "台湾，台北市／新北市"
+      "en-us": "Taipei, Taiwan",
+      "zh-tw": "台灣，台北市",
+      "zh-cn": "台湾，台北市"
     },
     "personalPhoto": "/resume/avatar2.jpg",
     "links": {
@@ -28,9 +28,9 @@
     }
   },
   "summary": {
-    "en-us": "Full-stack developer passionate about building AI-powered applications. Recent graduate from NTU Information Management, currently interning at Microsoft's TSMC OnePlatform Team and preparing for graduate studies. I thrive on turning ideas into scalable solutions—from hackathon victories to production systems serving hundreds of users. Teaching 500+ students as a TA, lecturer, and advisor has sharpened my ability to lead and communicate.",
-    "zh-tw": "熱愛打造 AI 軟體的全端工程師，畢業於台大資管系，目前於台灣微軟擔任實習生並計劃攻讀研究所。擅長將想法轉化為可擴展的解決方案，經歷橫跨黑客松奪獎到開發服務數百用戶的產品系統。對教學抱有熱忱，擔任講師與助教累積指導 500+ 位學生，使他具有良好溝通與領導能力。",
-    "zh-cn": "热爱打造 AI 应用的全栈工程师，毕业于台大资管系，目前于台湾微软担任实习生并计划攻读研究所。擅长将想法转化为可扩展的解决方案，经历横跨黑客松夺奖到开发服务数百用户的产品系统。对教学抱有热忱，担任讲师与助教累积指导 500+ 位学生，让他具有良好沟通与领导能力。"
+    "en-us": "James is passionate about building AI systems, teaching technical skills, and occasionally telling stories through his Nikon Z5.\n\nDuring university, he organized large-scale paid events, curated exhibitions for the photography club, and led the design and development of an online city treasure hunt game for NTU ArtFest. These experiences sharpened his sense for user experience and product flow, helping him build several award-winning AI applications before graduation and clarifying his pursuit of AI systems that can reason, make decisions, and operate reliably in real-world settings.\n\nAfter graduation, he continued his academic pursuit at NTUIM, focusing on Agentic Systems and FinanceQA, while refining the same product mindset through leading testing strategy during his internship at Microsoft Taiwan's Industry Solutions Delivery department and teaching hands-on engineering courses at Sprout (NGO), DTSH, ZSGH and NTU, reaching 1000+ students. Across these roles, the throughline remains the same: systems thinking, execution, and the ability to make complex problems clear and actionable.",
+    "zh-tw": "寬証熱愛打造 AI 系統、培養學生的技術，也偶爾透過 Nikon Z5 的觀景窗說故事。\n\n大學時期，他曾以召集人身份籌辦多個超過百位付費參與者的大型活動、在攝影社參與策展、在台大藝術季主導城市尋寶線上遊戲的設計與開發。這些經驗讓他熟悉從使用者體驗與流程去思考產品，使他在畢業前打造數個獲獎的 AI 軟體，明確了他對打造在真實場景擁有推理、決策與穩定運作能力之 AI 系統的追求。\n\n因此，畢業後他繼續在台大資管所深造，專注於 Agentic Systems 與 FinanceQA 相關研究，也持續在不同場域打磨同一套產品思維：於台灣微軟實習時，在企業解方部門主導測試策略；在資訊之芽、大同高中、中山女中與台大講授實作導向的工程課程，累積指導超過千名學生。一以貫之的，始終是系統思維、執行力，以及把複雜問題想清楚、做扎實的能力。",
+    "zh-cn": "宽証热爱打造 AI 系统、培养学生的技术，也偶尔透过 Nikon Z5 的取景框讲故事。\n\n大学时期，他曾以召集人身份筹办多个超过百位付费参与者的大型活动、在摄影社参与策展、在台大艺术季主导城市寻宝线上游戏的设计与开发。这些经历让他熟悉从用户体验与流程去思考产品，使他在毕业前打造数个获奖的 AI 软件，也更明确了自己对于打造能在真实场景中具备推理、决策与稳定运行能力之 AI 系统的追求。\n\n因此，毕业后他继续在台大资管所深造，专注于 Agentic Systems 与 FinanceQA 相关研究，也持续在不同场域打磨同一套产品思维：于台湾微软实习时，在企业解方部门主导测试策略；在资讯之芽、大同高中、中山女中与台大讲授实作导向的工程课程，累计指导超过千名学生。一以贯之的，始终是系统思维、执行力，以及把复杂问题想清楚、做扎实的能力。"
   },
   "achievements": [
     {

@@ -1,5 +1,5 @@
 import { type UnifiedPersonalInfo } from '@/lib/schemas/resume';
-import { Github, Linkedin, Globe, Mail, Phone, MapPin } from 'lucide-react';
+import { Github, Globe, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
 
 interface PersonalInfoProps {

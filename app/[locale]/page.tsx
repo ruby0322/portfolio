@@ -1,21 +1,14 @@
 import { Footer } from '@/components/portfolio/footer';
 import { Header } from '@/components/portfolio/header';
 import { HeroSection } from '@/components/portfolio/hero-section';
-import { AchievementItem } from '@/components/portfolio/resume/achievement-item';
-import { EducationItem } from '@/components/portfolio/resume/education-item';
-import { ExperienceItem } from '@/components/portfolio/resume/experience-item';
-import { ProjectItem } from '@/components/portfolio/resume/project-item';
-import { Skills } from '@/components/portfolio/resume/skills';
-import { Section } from '@/components/portfolio/section';
 import { type Locale } from '@/i18n';
 import { getResumeData } from '@/lib/data';
 import {
-    generateJsonLd,
-    getOrganizationSchema,
-    getPersonSchema,
-    getWebsiteSchema
+  generateJsonLd,
+  getOrganizationSchema,
+  getPersonSchema,
+  getWebsiteSchema
 } from '@/lib/structured-data';
-import { getTranslations } from 'next-intl/server';
 
 export default async function Home({
   params,
@@ -24,7 +17,7 @@ export default async function Home({
 }) {
   const { locale } = await params;
   const resumeData = await getResumeData(locale as Locale);
-  const t = await getTranslations('sections');
+  // const t = await getTranslations('sections');
 
   // 結構化資料
   const structuredData = [
@@ -46,7 +39,7 @@ export default async function Home({
         <main className="flex-1 pt-[73px]">
           <HeroSection info={resumeData.personalInfo} summary={resumeData.summary} />
 
-        <Section id="resume-content" className="scroll-mt-20 border-t-0">
+        {/* <Section id="resume-content" className="scroll-mt-20 border-t-0">
 
           {resumeData.education && resumeData.education.length > 0 && (
             <div className="mb-16">
@@ -98,7 +91,7 @@ export default async function Home({
               <Skills skills={resumeData.skills} />
             </div>
           )}
-        </Section>
+        </Section> */}
       </main>
       <Footer />
     </div>

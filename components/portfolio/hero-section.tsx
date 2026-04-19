@@ -11,6 +11,8 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ info, summary }: HeroSectionProps) {
+  const formattedSummary = summary?.replace(/\\n/g, '\n');
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -54,13 +56,13 @@ export function HeroSection({ info, summary }: HeroSectionProps) {
             )}
           </motion.div>
 
-          {summary && (
-            <motion.div
-              className="flex flex-col md:flex-row gap-8 items-center"
-              variants={itemVariants}
-            >
+          <motion.div
+            className="flex flex-col md:flex-row gap-8 md:gap-12 items-center md:items-start"
+            variants={itemVariants}
+          >
+            <div className="flex flex-col items-center md:items-start flex-shrink-0 space-y-5">
               {info.personalPhoto && (
-                <div className="flex-shrink-0">
+                <div>
                   <div className="relative w-32 h-32 md:w-40 md:h-40 overflow-hidden bg-muted">
                     <Image
                       src={info.personalPhoto}
@@ -72,36 +74,36 @@ export function HeroSection({ info, summary }: HeroSectionProps) {
                   </div>
                 </div>
               )}
-              <p className="text-base md:text-lg text-foreground/90 leading-relaxed max-w-2xl font-light flex-1">
-                {summary}
-              </p>
-            </motion.div>
-          )}
 
-          <motion.div
-            className="space-y-3 text-sm md:text-base text-muted-foreground"
-            variants={itemVariants}
-          >
-            {info.email && (
-              <a
-                href={`mailto:${info.email}`}
-                className="flex items-center gap-3 hover:text-foreground transition-colors"
-              >
-                <Mail className="w-4 h-4" />
-                <span>{info.email}</span>
-              </a>
-            )}
-            {info.phone && (
-              <div className="flex items-center gap-3">
-                <Phone className="w-4 h-4" />
-                <span>{info.phone}</span>
+              <div className="flex flex-col items-center md:items-start space-y-3 text-sm md:text-base text-muted-foreground">
+                {info.email && (
+                  <a
+                    href={`mailto:${info.email}`}
+                    className="flex items-center gap-3 hover:text-foreground transition-colors"
+                  >
+                    <Mail className="w-4 h-4" />
+                    <span>{info.email}</span>
+                  </a>
+                )}
+                {info.phone && (
+                  <div className="flex items-center gap-3">
+                    <Phone className="w-4 h-4" />
+                    <span>{info.phone}</span>
+                  </div>
+                )}
+                {info.location && (
+                  <div className="flex items-center gap-3">
+                    <MapPin className="w-4 h-4" />
+                    <span>{info.location}</span>
+                  </div>
+                )}
               </div>
-            )}
-            {info.location && (
-              <div className="flex items-center gap-3">
-                <MapPin className="w-4 h-4" />
-                <span>{info.location}</span>
-              </div>
+            </div>
+
+            {formattedSummary && (
+              <p className="text-base md:text-lg text-foreground/90 leading-relaxed max-w-2xl font-light flex-1 pt-1 whitespace-pre-line">
+                {formattedSummary}
+              </p>
             )}
           </motion.div>
 
