@@ -21,7 +21,7 @@ export const siteConfig = {
   phone: '0983-588-092',
   location: '台灣，台北市',
   github: 'https://github.com/ruby0322',
-  linkedin: 'https://www.linkedin.com/in/%E5%AF%AC%E8%A8%BC-%E9%A1%A7-a9b282214/',
+  linkedin: 'https://www.linkedin.com/in/jamesku0322/',
   instagram: 'https://www.instagram.com/ruby.0322/',
   instagramPhotography: 'https://www.instagram.com/kuaptured',
   facebook: 'https://www.facebook.com/ruby.ku.0322/',
